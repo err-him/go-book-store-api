@@ -1,0 +1,152 @@
+2020-02-28T09:40:11.454+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Requested item is not found!}, string=Requested item is not found!)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/src/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/src/handler/response.go:50
+book-store-api/src/controllers.(*Genre).Delete
+	/Users/himanshu/go-learning/book-store-api/src/controllers/genre.go:132
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-02-28T09:44:23.742+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Requested item is not found!}, string=Requested item is not found!)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/src/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/src/handler/response.go:50
+book-store-api/src/controllers.(*Genre).Delete
+	/Users/himanshu/go-learning/book-store-api/src/controllers/genre.go:132
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-02-28T09:44:33.066+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Requested item is not found!}, string=Requested item is not found!)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/src/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/src/handler/response.go:50
+book-store-api/src/controllers.(*Genre).Delete
+	/Users/himanshu/go-learning/book-store-api/src/controllers/genre.go:132
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-02-28T09:44:51.686+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Requested item is not found!}, string=Requested item is not found!)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/src/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/src/handler/response.go:50
+book-store-api/src/controllers.(*Genre).Delete
+	/Users/himanshu/go-learning/book-store-api/src/controllers/genre.go:132
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-02-28T09:45:57.856+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Requested item is not found!}, string=Requested item is not found!)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/src/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/src/handler/response.go:50
+book-store-api/src/controllers.(*Genre).Delete
+	/Users/himanshu/go-learning/book-store-api/src/controllers/genre.go:132
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-02-28T09:47:58.346+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Requested item is not found!}, string=Requested item is not found!)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/src/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/src/handler/response.go:50
+book-store-api/src/controllers.(*Genre).Delete
+	/Users/himanshu/go-learning/book-store-api/src/controllers/genre.go:132
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-02-28T09:54:16.195+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Requested item is not found!}, string=Requested item is not found!)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/src/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/src/handler/response.go:50
+book-store-api/src/controllers.(*Genre).Delete
+	/Users/himanshu/go-learning/book-store-api/src/controllers/genre.go:132
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-02-28T09:54:49.494+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Requested item is not found!}, string=Requested item is not found!)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/src/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/src/handler/response.go:50
+book-store-api/src/controllers.(*Genre).Delete
+	/Users/himanshu/go-learning/book-store-api/src/controllers/genre.go:132
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
