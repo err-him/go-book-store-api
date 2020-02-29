@@ -1,8 +1,8 @@
 package config
 
 import (
-	"book-store-api/config/driver"
 	"book-store-api/api/controllers"
+	"book-store-api/config/driver"
 	"net/http"
 
 	"github.com/gorilla/mux"
@@ -28,4 +28,7 @@ func handleAppRoutes(r *mux.Router, db *driver.DB) {
 	v1.HandleFunc("/publishers/get/{id}", pubHandler.GetOne).Methods(http.MethodGet)
 	v1.HandleFunc("/publishers/delete/{id}", pubHandler.Delete).Methods(http.MethodDelete)
 	v1.HandleFunc("/publishers/update", pubHandler.UpdatePublisher).Methods(http.MethodPut)
+
+	//Author routes
+
 }
