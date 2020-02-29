@@ -8,6 +8,7 @@ const (
 
 //limit for offset and limit for get all
 const (
-	OFFSET = 0
-	LIMIT  = 8
+	OFFSET            = 0
+	LIMIT             = 8
+	MYSQL_DATE_FORMAT = "2006-01-02"
 )

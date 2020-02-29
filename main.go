@@ -1,8 +1,8 @@
 package main
 
 import (
+	"book-store-api/api/utils"
 	"book-store-api/config"
-	"book-store-api/src/utils"
 	"log"
 	"os"
 

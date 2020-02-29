@@ -70,10 +70,19 @@ config -> folder to store all connection and routing related logic
   config/app.go -> app run/db connection and routing Initialize
   config/routes.go -> app routing defined here
   config/driver/db.go -> mysql connection established Here
-  config/properties -> all application properties in JSON form stored Here, to read config file **https://github.com/err-him/gonf**       package used
+  config/properties -> all application properties in JSON form stored Here, to read config file **https://github.com/err-him/gonf** package used
 
 logger -> Folder contains application logging logic
     logger/zap.go -> This contains the logger implementation logic. To implement **uber/zap** logger with **lumberjack** a log rolling package **https://github.com/err-him/gozap** package is being used
+
+api  -> Api package is used to receive an incoming request, validate the request for any bad input parameters. Generate a proper     response after running our business logic.
+
+    api/constants  ->   contains all application related constants like http etc
+    api/controllers ->  Contains handler functions for particular route to be called when an api is called.
+    api/models ->   database tables to be used as models struct and interface provided for the repositories
+    api/handler ->      basically contains the helper functions used in returning api responses, HTTP status codes, default messages etc.
+    api/repositories ->   repository package is a wrapper on database and cache, so no other package can directly access the database. This package handle all create, update, fetch and delete operation on database tables or cache.
+    api/utils ->    contains all application utility function.
 
 ```
 
@@ -84,7 +93,14 @@ logger -> Folder contains application logging logic
 * **/update** `PUT` : update  Genre
 * **/get/all** `GET` : Get all active Genre
 * **get/{:id}** `GET` : Get One genre - specified by Id or Genre slug
-* **delete/{:id}** `DELETE` : delete genre - Soft delete
+* **delete/{:id}** `DELETE` : delete genre - Soft delete by specified id or slug
+
+#### /publishers
+* **/create** `POST` : Create Publisher
+* **/update** `PUT` : update  Publisher
+* **/get/all** `GET` : Get all active Publisher
+* **get/{:id}** `GET` : Get One Publisher - specified by Id or Genre slug
+* **delete/{:id}** `DELETE` : delete Publisher - Soft delete by specified id or slug
 
 ## Todo
 

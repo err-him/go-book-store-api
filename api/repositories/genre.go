@@ -1,10 +1,9 @@
 package repositories
 
 import (
-	"book-store-api/src/models"
+	"book-store-api/api/models"
 	"context"
 	"database/sql"
-	"fmt"
 	"strconv"
 	"strings"
 	"time"
@@ -126,13 +125,14 @@ func (g *GenreRepo) GetOne(ctx context.Context, id string) (*models.Genre, error
 func (g *GenreRepo) Delete(ctx context.Context, id string) (bool, error) {
 	genreId, _ := strconv.ParseInt(id, 10, 64)
 	res, err := g.db.Exec(`update genre set status = 0 where id=? OR slug = ?`, genreId, id)
-	fmt.Println("err", err)
 	rows, err := res.RowsAffected()
-	fmt.Println("InsertID", rows)
 	if err != nil {
 		return false, err
 	}
-	return true, nil
+	if rows >= 0 {
+		return true, nil
+	}
+	return false, nil
 }
 
 /**
