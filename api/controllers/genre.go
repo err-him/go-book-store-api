@@ -2,12 +2,11 @@ package controllers
 
 import (
 	"book-store-api/config/driver"
-	hc "book-store-api/src/constants"
-	"book-store-api/src/handler"
-	"book-store-api/src/models"
-	r "book-store-api/src/repositories"
+	hc "book-store-api/api/constants"
+	"book-store-api/api/handler"
+	"book-store-api/api/models"
+	r "book-store-api/api/repositories"
 	"encoding/json"
-	"fmt"
 	"net/http"
 	"strconv"
 
@@ -49,7 +48,6 @@ func (g *Genre) CreateGenre(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	handler.HttpResponse(w, http.StatusCreated, res)
-	fmt.Println("res", res)
 }
 
 /**

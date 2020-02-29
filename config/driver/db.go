@@ -1,7 +1,7 @@
 package driver
 
 import (
-	"book-store-api/src/utils"
+	"book-store-api/api/utils"
 	"database/sql"
 	"fmt"
 	"log"
