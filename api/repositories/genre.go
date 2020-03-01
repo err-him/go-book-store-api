@@ -42,23 +42,17 @@ func (g *GenreRepo) Create(ctx context.Context, r *models.CreateGenre) (*models.
  * @param  {[type]} g [description]
  * @return {[type]}   [description]
  */
-func (g *GenreRepo) Update(ctx context.Context, r *models.Genre) (*models.CreateGenreResponse, error) {
-	//check if record exists in database
-	slug, err := g.fetchById(*r.Id)
-	if err != nil {
-		return nil, err
-	}
+func (g *GenreRepo) Update(ctx context.Context, r *models.Genre) (bool, error) {
 	//update record in database
-	res, err := g.db.Exec(`update genre set name=?, status = ?, updated_at = ? where id=?`, strings.TrimSpace(*r.Name), r.Status, time.Now(), r.Id)
+	rows, err := g.db.Exec(`update genre set name=?, status = ?, updated_at = ? where id=?`, strings.TrimSpace(*r.Name), r.Status, time.Now(), r.Id)
 	if err != nil {
-		return nil, err
+		return false, err
 	}
-	insertedId, _ := res.LastInsertId()
-	payload := &models.CreateGenreResponse{
-		Id:   insertedId,
-		Slug: slug,
+	row, _ := rows.RowsAffected()
+	if row > 0 {
+		return true, nil
 	}
-	return payload, nil
+	return false, models.ErrNotFound
 }
 
 /**
@@ -158,22 +152,4 @@ func (g *GenreRepo) generateGenreSlug(slug string) (string, error) {
 		}
 	}
 	return "", models.ErrAlreadyPresent
-}
-
-/**
- * [func description]
- * @param  {[type]} g [description]
- * @return {[type]}   [description]
- */
-func (g *GenreRepo) fetchById(id int64) (string, error) {
-	var slug string
-	row := g.db.QueryRow(`select slug from genre where id=?`, id)
-	err := row.Scan(&slug)
-	if err != nil {
-		if err == sql.ErrNoRows {
-			return "", models.ErrNotFound
-		}
-		return "", err
-	}
-	return slug, nil
 }

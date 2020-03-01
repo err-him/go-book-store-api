@@ -57,7 +57,7 @@ make build
 ```bash
 # Build and Run
 cd go-book-store-api
-make run
+make APP_ENV="local" run
 
 # API Endpoint : http://127.0.0.1:9002
 ```
@@ -101,6 +101,13 @@ api  -> Api package is used to receive an incoming request, validate the request
 * **/get/all** `GET` : Get all active Publisher
 * **get/{:id}** `GET` : Get One Publisher - specified by Id or Genre slug
 * **delete/{:id}** `DELETE` : delete Publisher - Soft delete by specified id or slug
+
+#### /author
+* **/create** `POST` : Create Author
+* **/update** `PUT` : update  Author
+* **/get/all** `GET` : Get all active Author
+* **get/{:id}** `GET` : Get One Author - specified by Id or Genre slug
+* **delete/{:id}** `DELETE` : delete Author - Soft delete by specified id or slug
 
 ## Todo
 
