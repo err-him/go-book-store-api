@@ -57,7 +57,7 @@ make build
 ```bash
 # Build and Run
 cd go-book-store-api
-make run
+make APP_ENV="local" run
 
 # API Endpoint : http://127.0.0.1:9002
 ```
