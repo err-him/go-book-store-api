@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"encoding/json"
+	"fmt"
 	"strings"
 	"time"
 )
@@ -19,7 +19,8 @@ func (f *MysqlFormatDate) UnmarshalJSON(b []byte) (err error) {
 }
 
 func (f MysqlFormatDate) MarshalJSON() ([]byte, error) {
-	return json.Marshal(f)
+	stamp := fmt.Sprintf("\"%s\"", time.Time(f).Format("2006-01-02"))
+	return []byte(stamp), nil
 }
 
 func (f MysqlFormatDate) Format(s string) string {

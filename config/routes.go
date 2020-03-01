@@ -32,5 +32,8 @@ func handleAppRoutes(r *mux.Router, db *driver.DB) {
 
 	//Author routes
 	v1.HandleFunc("/author/create", authorhandler.CreateAuthor).Methods(http.MethodPost)
-
+	v1.HandleFunc("/author/get/all", authorhandler.GetAll).Methods(http.MethodGet)
+	v1.HandleFunc("/author/get/{id}", authorhandler.GetOne).Methods(http.MethodGet)
+	v1.HandleFunc("/author/delete/{id}", authorhandler.Delete).Methods(http.MethodDelete)
+	v1.HandleFunc("/author/update", authorhandler.UpdateAuthor).Methods(http.MethodPut)
 }

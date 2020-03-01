@@ -27,7 +27,7 @@ type Genre struct {
 
 type GenreRepo interface {
 	Create(ctx context.Context, g *CreateGenre) (*CreateGenreResponse, error)
-	Update(ctx context.Context, g *Genre) (*CreateGenreResponse, error)
+	Update(ctx context.Context, g *Genre) (bool, error)
 	GetAll(ctx context.Context, limit int64, offset int64) ([]*Genre, error)
 	GetOne(ctx context.Context, id string) (*Genre, error)
 	Delete(ctx context.Context, id string) (bool, error)
