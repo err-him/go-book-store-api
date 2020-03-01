@@ -127,7 +127,7 @@ func (p *PubsRepo) Update(ctx context.Context, r *models.UpdateReqPublish) (bool
 		return false, err
 	}
 	row, _ := res.RowsAffected()
-	if row >= 0 {
+	if row > 0 {
 		return true, nil
 	}
 	return false, models.ErrNotFound
