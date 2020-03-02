@@ -43,4 +43,6 @@ type BookAuthor struct {
 
 type BooksRepo interface {
 	Add(ctx context.Context, r *Books) (*Books, error)
+	Update(ctx context.Context, r *Books) (*Books, error)
+	Delete(ctx context.Context, id int64) (bool, error)
 }
