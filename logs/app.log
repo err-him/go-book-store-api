@@ -435,3 +435,1145 @@ net/http.serverHandler.ServeHTTP
 	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
 net/http.(*conn).serve
 	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-01T23:19:51.480+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={400 Bad Request}, <nil>)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:32
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-01T23:20:00.529+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={400 Bad Request}, <nil>)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:32
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-01T23:20:06.832+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={400 Bad Request}, <nil>)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:32
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-01T23:21:56.624+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={400 Bad Request}, <nil>)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:34
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-01T23:24:14.260+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={400 Bad Request}, <nil>)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:32
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-01T23:24:21.367+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={400 Bad Request}, <nil>)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:32
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-01T23:24:28.649+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={400 Bad Request}, *json.SyntaxError=invalid character '}' looking for beginning of object key string)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:27
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-01T23:24:36.553+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={400 Bad Request}, <nil>)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:32
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-01T23:33:55.530+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Error 1054: Unknown column 'language' in 'field list'}, string=Error 1054: Unknown column 'language' in 'field list')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:37
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-01T23:35:34.344+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Error 1062: Duplicate entry 'hsdj' for key 'books.isbn_UNIQUE'}, string=Error 1062: Duplicate entry 'hsdj' for key 'books.isbn_UNIQUE')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:37
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-01T23:36:02.422+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={400 Bad Request}, *json.UnmarshalTypeError=json: cannot unmarshal number 100.12 into Go struct field BookOthers.other.quantity of type uint8)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:27
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-01T23:36:18.042+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={400 Bad Request}, *json.UnmarshalTypeError=json: cannot unmarshal string into Go struct field BookGenre.book_genre.id of type int)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:27
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-01T23:36:22.626+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Error 1062: Duplicate entry 'hssddj' for key 'books.isbn_UNIQUE'}, string=Error 1062: Duplicate entry 'hssddj' for key 'books.isbn_UNIQUE')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:37
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:18:07.053+0530	ERROR	logger/zap.go:41	Error While processing Transaction%!(EXTRA *mysql.MySQLError=Error 1062: Duplicate entry 'hssddj' for key 'books.isbn_UNIQUE', string=Error 1062: Duplicate entry 'hssddj' for key 'books.isbn_UNIQUE')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.WithTransaction.func1
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:39
+book-store-api/api/handler.WithTransaction
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:48
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:24
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:18:07.096+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA *mysql.MySQLError=Error 1062: Duplicate entry 'hssddj' for key 'books.isbn_UNIQUE', string=Error 1062: Duplicate entry 'hssddj' for key 'books.isbn_UNIQUE')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HandleError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:64
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:38
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:18:38.544+0530	ERROR	logger/zap.go:41	Error While processing Transaction%!(EXTRA *mysql.MySQLError=Error 1062: Duplicate entry 'hsdj' for key 'books.isbn_UNIQUE', string=Error 1062: Duplicate entry 'hsdj' for key 'books.isbn_UNIQUE')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.WithTransaction.func1
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:39
+book-store-api/api/handler.WithTransaction
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:48
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:24
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:18:38.547+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA *mysql.MySQLError=Error 1062: Duplicate entry 'hsdj' for key 'books.isbn_UNIQUE', string=Error 1062: Duplicate entry 'hsdj' for key 'books.isbn_UNIQUE')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HandleError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:64
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:38
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:19:25.326+0530	ERROR	logger/zap.go:41	Error While processing Transaction%!(EXTRA *mysql.MySQLError=Error 1062: Duplicate entry 'hsdj' for key 'books.isbn_UNIQUE', string=Error 1062: Duplicate entry 'hsdj' for key 'books.isbn_UNIQUE')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.WithTransaction.func1
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:39
+book-store-api/api/handler.WithTransaction
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:48
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:25
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:19:25.331+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA *mysql.MySQLError=Error 1062: Duplicate entry 'hsdj' for key 'books.isbn_UNIQUE', string=Error 1062: Duplicate entry 'hsdj' for key 'books.isbn_UNIQUE')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HandleError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:64
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:42
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:20:36.605+0530	ERROR	logger/zap.go:41	Error While processing Transaction%!(EXTRA *mysql.MySQLError=Error 1062: Duplicate entry 'hsdj' for key 'books.isbn_UNIQUE', string=Error 1062: Duplicate entry 'hsdj' for key 'books.isbn_UNIQUE')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.WithTransaction.func1
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:39
+book-store-api/api/handler.WithTransaction
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:48
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:24
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:20:36.659+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA *mysql.MySQLError=Error 1062: Duplicate entry 'hsdj' for key 'books.isbn_UNIQUE', string=Error 1062: Duplicate entry 'hsdj' for key 'books.isbn_UNIQUE')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HandleError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:64
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:38
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:20:36.660+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Error 1062: Duplicate entry 'hsdj' for key 'books.isbn_UNIQUE'}, string=Error 1062: Duplicate entry 'hsdj' for key 'books.isbn_UNIQUE')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:37
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:27:04.013+0530	ERROR	logger/zap.go:41	Error While processing Transaction%!(EXTRA *mysql.MySQLError=Error 1054: Unknown column 'other' in 'field list', string=Error 1054: Unknown column 'other' in 'field list')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.WithTransaction.func1
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:39
+book-store-api/api/handler.WithTransaction
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:48
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:24
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:27:04.059+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA *mysql.MySQLError=Error 1054: Unknown column 'other' in 'field list', string=Error 1054: Unknown column 'other' in 'field list')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HandleError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:64
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:45
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:27:04.059+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Error 1054: Unknown column 'other' in 'field list'}, string=Error 1054: Unknown column 'other' in 'field list')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:37
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:27:22.727+0530	ERROR	logger/zap.go:41	Error While processing Transaction%!(EXTRA *mysql.MySQLError=Error 1054: Unknown column 'other' in 'field list', string=Error 1054: Unknown column 'other' in 'field list')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.WithTransaction.func1
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:39
+book-store-api/api/handler.WithTransaction
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:48
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:24
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:27:22.730+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA *mysql.MySQLError=Error 1054: Unknown column 'other' in 'field list', string=Error 1054: Unknown column 'other' in 'field list')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HandleError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:64
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:45
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:27:22.730+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Error 1054: Unknown column 'other' in 'field list'}, string=Error 1054: Unknown column 'other' in 'field list')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:37
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:29:17.134+0530	ERROR	logger/zap.go:41	Error While processing Transaction%!(EXTRA *mysql.MySQLError=Error 1062: Duplicate entry '13' for key 'book_genre.PRIMARY', string=Error 1062: Duplicate entry '13' for key 'book_genre.PRIMARY')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.WithTransaction.func1
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:39
+book-store-api/api/handler.WithTransaction
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:48
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:24
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:29:17.136+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA *mysql.MySQLError=Error 1062: Duplicate entry '13' for key 'book_genre.PRIMARY', string=Error 1062: Duplicate entry '13' for key 'book_genre.PRIMARY')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HandleError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:64
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:53
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:29:17.136+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Error 1062: Duplicate entry '13' for key 'book_genre.PRIMARY'}, string=Error 1062: Duplicate entry '13' for key 'book_genre.PRIMARY')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:37
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:29:39.649+0530	ERROR	logger/zap.go:41	Error While processing Transaction%!(EXTRA *mysql.MySQLError=Error 1062: Duplicate entry '14' for key 'book_genre.PRIMARY', string=Error 1062: Duplicate entry '14' for key 'book_genre.PRIMARY')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.WithTransaction.func1
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:39
+book-store-api/api/handler.WithTransaction
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:48
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:24
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:29:39.695+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA *mysql.MySQLError=Error 1062: Duplicate entry '14' for key 'book_genre.PRIMARY', string=Error 1062: Duplicate entry '14' for key 'book_genre.PRIMARY')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HandleError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:64
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:53
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T10:29:39.695+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Error 1062: Duplicate entry '14' for key 'book_genre.PRIMARY'}, string=Error 1062: Duplicate entry '14' for key 'book_genre.PRIMARY')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:37
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:08:51.342+0530	ERROR	logger/zap.go:41	Error While processing Transaction%!(EXTRA *mysql.MySQLError=Error 1054: Unknown column 'test' in 'field list', string=Error 1054: Unknown column 'test' in 'field list')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.WithTransaction.func1
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:39
+book-store-api/api/handler.WithTransaction
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:48
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:24
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:08:51.369+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA *mysql.MySQLError=Error 1054: Unknown column 'test' in 'field list', string=Error 1054: Unknown column 'test' in 'field list')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HandleError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:64
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:53
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:08:51.369+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Error 1054: Unknown column 'test' in 'field list'}, string=Error 1054: Unknown column 'test' in 'field list')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:37
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:09:22.634+0530	ERROR	logger/zap.go:41	Error While processing Transaction%!(EXTRA *mysql.MySQLError=Error 1054: Unknown column 'test' in 'field list', string=Error 1054: Unknown column 'test' in 'field list')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.WithTransaction.func1
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:39
+book-store-api/api/handler.WithTransaction
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:48
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:24
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:09:22.784+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA *mysql.MySQLError=Error 1054: Unknown column 'test' in 'field list', string=Error 1054: Unknown column 'test' in 'field list')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HandleError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:64
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:53
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:09:22.784+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Error 1054: Unknown column 'test' in 'field list'}, string=Error 1054: Unknown column 'test' in 'field list')
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:37
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:09:36.567+0530	ERROR	logger/zap.go:41	Error While processing Transaction%!(EXTRA *errors.errorString=sql: expected 2 arguments, got 3, string=sql: expected 2 arguments, got 3)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.WithTransaction.func1
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:39
+book-store-api/api/handler.WithTransaction
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:48
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:24
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:09:36.610+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA *errors.errorString=sql: expected 2 arguments, got 3, string=sql: expected 2 arguments, got 3)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HandleError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:64
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:53
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:09:36.610+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 sql: expected 2 arguments, got 3}, string=sql: expected 2 arguments, got 3)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:37
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:10:35.986+0530	ERROR	logger/zap.go:41	Error While processing Transaction%!(EXTRA *mysql.MySQLError=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE), string=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE))
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.WithTransaction.func1
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:39
+book-store-api/api/handler.WithTransaction
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:48
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:24
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:10:36.028+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA *mysql.MySQLError=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE), string=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE))
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HandleError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:64
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:53
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:10:36.028+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE)}, string=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE))
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:37
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:11:39.756+0530	ERROR	logger/zap.go:41	Error While processing Transaction%!(EXTRA *mysql.MySQLError=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE), string=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE))
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.WithTransaction.func1
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:39
+book-store-api/api/handler.WithTransaction
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:48
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:24
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:11:39.798+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA *mysql.MySQLError=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE), string=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE))
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HandleError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:64
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:53
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:11:39.798+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE)}, string=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE))
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:37
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+
+
+
+
+
+
+
+2020-03-02T11:13:24.951+0530	ERROR	logger/zap.go:41	Error While processing Transaction%!(EXTRA *mysql.MySQLError=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE), string=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE))
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.WithTransaction.func1
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:42
+book-store-api/api/handler.WithTransaction
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:51
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:24
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:13:24.954+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA *mysql.MySQLError=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE), string=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE))
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HandleError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:64
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:53
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:13:24.955+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE)}, string=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE))
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:37
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:13:56.006+0530	ERROR	logger/zap.go:41	Error While processing Transaction%!(EXTRA *mysql.MySQLError=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE), string=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE))
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.WithTransaction.func1
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:42
+book-store-api/api/handler.WithTransaction
+	/Users/himanshu/go-learning/book-store-api/api/handler/transaction.go:51
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:24
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:13:56.048+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA *mysql.MySQLError=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE), string=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE))
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HandleError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:64
+book-store-api/api/repositories.(*BookRepo).Add
+	/Users/himanshu/go-learning/book-store-api/api/repositories/books.go:53
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:35
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-02T11:13:56.048+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={500 Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE)}, string=Error 1452: Cannot add or update a child row: a foreign key constraint fails (`book_store`.`book_genre`, CONSTRAINT `FOR_BookGenre_GenreID` FOREIGN KEY (`genre_id`) REFERENCES `genre` (`id`) ON DELETE CASCADE))
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/api/handler/response.go:50
+book-store-api/api/controllers.(*Books).AddBook
+	/Users/himanshu/go-learning/book-store-api/api/controllers/books.go:37
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890

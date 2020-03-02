@@ -13,7 +13,7 @@ func handleAppRoutes(r *mux.Router, db *driver.DB) {
 	genreHandler := controllers.NewGenreHandler(db)
 	pubHandler := controllers.NewPublisherHandler(db)
 	authorhandler := controllers.NewAuthorHandler(db)
-	// bookHandler := controllers.NewBookHandler(db)
+	bookHandler := controllers.NewBookHandler(db)
 	//handling API versioning
 	v1 := r.PathPrefix("/api/v1").Subrouter()
 
@@ -39,4 +39,5 @@ func handleAppRoutes(r *mux.Router, db *driver.DB) {
 	v1.HandleFunc("/author/update", authorhandler.UpdateAuthor).Methods(http.MethodPut)
 
 	//Book Routes
+	v1.HandleFunc("/book/add", bookHandler.AddBook).Methods(http.MethodPost)
 }
