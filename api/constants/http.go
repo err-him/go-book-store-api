@@ -4,6 +4,7 @@ const (
 	BAD_REQUEST           = "Bad Request"
 	INTERNAL_SERVER_ERROR = "Internal server error occured, try after some time"
 	NOT_FOUND             = "Not found"
+	INVALID_SEARCH_PARAM  = "invalid Search param"
 )
 
 //limit for offset and limit for get all

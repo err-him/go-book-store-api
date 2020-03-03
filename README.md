@@ -109,6 +109,16 @@ api  -> Api package is used to receive an incoming request, validate the request
 * **get/{:id}** `GET` : Get One Author - specified by Id or Genre slug
 * **delete/{:id}** `DELETE` : delete Author - Soft delete by specified id or slug
 
+
+#### /book
+* **/create** `POST` : Create Book
+* **/update** `PUT` : update  Book
+* **/get/all** `GET` : Get all Books
+* **get/{:id}** `GET` : Get One Book - specified by Id
+* **delete/{:id}** `DELETE` : delete Book - Soft delete by Id
+* **search?q={:query}** `GET` : Search book - by its Name
+
+
 ## Todo
 
 - [√] Support basic REST APIs.
