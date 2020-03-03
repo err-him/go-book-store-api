@@ -2,6 +2,7 @@ package config
 
 import (
 	"book-store-api/config/driver"
+	"book-store-api/handler"
 	"log"
 	"net/http"
 
@@ -26,5 +27,5 @@ func (a *App) Intialize() {
 
 func (a *App) Run(host string) {
 
-	log.Fatal(http.ListenAndServe(":"+host, a.Router))
+	log.Fatal(http.ListenAndServe(":"+host, handler.CORS(a.Router)))
 }

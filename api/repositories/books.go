@@ -2,7 +2,7 @@ package repositories
 
 import (
 	cons "book-store-api/api/constants"
-	"book-store-api/api/handler"
+	"book-store-api/api/helper"
 	"book-store-api/api/models"
 	"context"
 	"database/sql"

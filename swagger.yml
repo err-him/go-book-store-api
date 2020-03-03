@@ -1,0 +1,219 @@
+consumes:
+- application/json
+definitions: {}
+info:
+  description: Golang productio ready book store rest api
+  title: Book Store Rest Api - GoLang
+  version: 0.1.0
+host: localhost:9002
+basePath: /api/v1
+paths: {}
+produces:
+- application/json
+schemes:
+- http
+swagger: "2.0"
+
+paths:
+
+  /author/create:
+
+    post:
+      tags: [auhtor]
+      summary: create new Author
+      operationId: AuthorCreate
+      parameters:
+        - in: body
+          name: author
+          description: author object that needs to be added to database
+          required: true
+          schema:
+            $ref: '#/definitions/CreateAuthor'
+      responses:
+        201:
+          description: successful operation
+          schema:
+            $ref: '#/definitions/AuthorCreateRes'
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /author/update:
+
+    put:
+      tags: [auhtor]
+      summary: Update Author
+      operationId: AuthorUpdate
+      parameters:
+        - in: body
+          name: author
+          description: author object that needs to be updated in database
+          required: true
+          schema:
+            $ref: '#/definitions/UpdateAuthor'
+      responses:
+        204:
+          description: The resource was updated successfully
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /author/delete/20:
+
+    delete:
+      tags: [auhtor]
+      summary: Delete Author
+      operationId: AuthorDelete
+      responses:
+        204:
+          description: The resource was deleted successfully
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+definitions:
+
+
+  UpdateAuthor:
+    type: object
+    properties:
+      id:
+        x-order: 0
+        type: int
+        example: 100
+        description: author id
+      name:
+        x-order: 1
+        type: string
+        example: ABC DEF
+        description: author name
+      about:
+        x-order: 2
+        $ref: '#/definitions/CreateAuthorAbout'
+      status:
+        x-order: 4
+        type: boolean
+        example: false
+        description: author status
+
+  AuthorCreateRes:
+    type: object
+    properties:
+      success:
+        x-order: 0
+        type: boolean
+        example: true
+        description: author name
+      data:
+        x-order: 1
+        $ref: '#/definitions/CreateAuthorResData'
+
+  CreateAuthorResData:
+    type: object
+    properties:
+      id:
+        x-order: 0
+        type: int
+        example: 10
+      slug:
+        x-order: 1
+        type: string
+        example: slug
+
+
+  CreateAuthor:
+    type: object
+    properties:
+      name:
+        x-order: 0
+        type: string
+        example: ABC DEF
+        description: author name
+      about:
+        x-order: 1
+        $ref: '#/definitions/CreateAuthorAbout'
+
+
+  CreateAuthorAbout:
+    type: object
+    properties:
+      years_active:
+        x-order: 0
+        type: string
+        example: "1810-12-12"
+      language:
+        x-order: 1
+        type: string
+        example: "English"
+      personal:
+        x-order: 2
+        $ref: '#/definitions/CreateAuthorAboutPersonal'
+
+  CreateAuthorAboutPersonal:
+    type: object
+    properties:
+      dob:
+        x-order: 0
+        type: string
+        example: "1810-12-12"
+      info:
+        x-order: 1
+        type: string
+        example: "This is info"
+
+  BadRequest:
+    type: object
+    properties:
+      success:
+        x-order: 0
+        type: boolean
+        example: false
+      error:
+        x-order: 1
+        $ref: '#/definitions/HttpErrBadReq'
+
+  InternalErr:
+    type: object
+    properties:
+      success:
+        x-order: 0
+        type: boolean
+        example: false
+      error:
+        x-order: 1
+        $ref: '#/definitions/HttpErrInternal'
+
+  HttpErrBadReq:
+    type: object
+    properties:
+      code:
+        type: int
+        example: 400
+      message:
+        type: string
+        example: Bad Request
+
+  HttpErrInternal:
+    type: object
+    properties:
+      code:
+        type: int
+        example: 500
+      message:
+        type: string
+        example: Internal server error occured, try after some time
