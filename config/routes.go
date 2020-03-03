@@ -42,4 +42,7 @@ func handleAppRoutes(r *mux.Router, db *driver.DB) {
 	v1.HandleFunc("/book/add", bookHandler.AddBook).Methods(http.MethodPost)
 	v1.HandleFunc("/book/update", bookHandler.UpdateBook).Methods(http.MethodPut)
 	v1.HandleFunc("/book/delete/{id}", bookHandler.DeleteBook).Methods(http.MethodDelete)
+	v1.HandleFunc("/book/get/all", bookHandler.GetAll).Methods(http.MethodGet)
+	v1.HandleFunc("/book/get/{id}", bookHandler.GetOne).Methods(http.MethodGet)
+	v1.HandleFunc("/book/search", bookHandler.SearchBook).Methods(http.MethodGet)
 }
