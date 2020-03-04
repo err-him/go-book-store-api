@@ -1,4 +1,4 @@
-package handler
+package helper
 
 import (
 	"book-store-api/logger"

@@ -35,19 +35,19 @@ func (g *Genre) CreateGenre(w http.ResponseWriter, r *http.Request) {
 	err := json.NewDecoder(r.Body).Decode(&genre)
 	//validate the request
 	if err != nil {
-		handler.HttpError(w, http.StatusBadRequest, err.Error(), err)
+		helper.HttpError(w, http.StatusBadRequest, err.Error(), err)
 		return
 	}
 
 	if genre.Name == "" {
-		handler.HttpError(w, http.StatusBadRequest, hc.BAD_REQUEST, r.Body)
+		helper.HttpError(w, http.StatusBadRequest, hc.BAD_REQUEST, r.Body)
 	}
 	res, err := g.genreRepo.Create(r.Context(), &genre)
 	if err != nil {
-		handler.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
+		helper.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
 		return
 	}
-	handler.HttpResponse(w, http.StatusCreated, res)
+	helper.HttpResponse(w, http.StatusCreated, res)
 }
 
 /**
@@ -61,20 +61,20 @@ func (g *Genre) UpdateGenre(w http.ResponseWriter, r *http.Request) {
 	err := json.NewDecoder(r.Body).Decode(&req)
 	//validate the request
 	if err != nil {
-		handler.HttpError(w, http.StatusBadRequest, err.Error(), err)
+		helper.HttpError(w, http.StatusBadRequest, err.Error(), err)
 		return
 	}
 
 	if r.Body == nil || req.Id == nil || req.Name == nil || req.Status == nil {
-		handler.HttpError(w, http.StatusBadRequest, hc.BAD_REQUEST, r.Body)
+		helper.HttpError(w, http.StatusBadRequest, hc.BAD_REQUEST, r.Body)
 		return
 	}
 	res, err := g.genreRepo.Update(r.Context(), &req)
 	if err != nil {
-		handler.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
+		helper.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
 		return
 	}
-	handler.HttpResponse(w, http.StatusNoContent, res)
+	helper.HttpResponse(w, http.StatusNoContent, res)
 }
 
 func (g *Genre) GetAll(w http.ResponseWriter, r *http.Request) {
@@ -95,10 +95,10 @@ func (g *Genre) GetAll(w http.ResponseWriter, r *http.Request) {
 
 	res, err := g.genreRepo.GetAll(r.Context(), limit, offset)
 	if err != nil {
-		handler.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
+		helper.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
 		return
 	}
-	handler.HttpResponse(w, http.StatusOK, res)
+	helper.HttpResponse(w, http.StatusOK, res)
 }
 
 /**
@@ -111,10 +111,10 @@ func (g *Genre) GetOne(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	res, err := g.genreRepo.GetOne(r.Context(), vars["id"])
 	if err != nil {
-		handler.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
+		helper.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
 		return
 	}
-	handler.HttpResponse(w, http.StatusOK, res)
+	helper.HttpResponse(w, http.StatusOK, res)
 }
 
 /**
@@ -127,8 +127,8 @@ func (g *Genre) Delete(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	res, err := g.genreRepo.Delete(r.Context(), vars["id"])
 	if err != nil {
-		handler.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
+		helper.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
 		return
 	}
-	handler.HttpResponse(w, http.StatusNoContent, res)
+	helper.HttpResponse(w, http.StatusNoContent, res)
 }

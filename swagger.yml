@@ -28,12 +28,12 @@ paths:
           description: author object that needs to be added to database
           required: true
           schema:
-            $ref: '#/definitions/CreateAuthor'
+            $ref: '#/definitions/CreateAuthorReq'
       responses:
         201:
-          description: successful operation
+          description: successful created author
           schema:
-            $ref: '#/definitions/AuthorCreateRes'
+            $ref: '#/definitions/CreateAuthorRes'
         400:
           description: error while processing request
           schema:
@@ -55,7 +55,7 @@ paths:
           description: author object that needs to be updated in database
           required: true
           schema:
-            $ref: '#/definitions/UpdateAuthor'
+            $ref: '#/definitions/UpdateAuthorReq'
       responses:
         204:
           description: The resource was updated successfully
@@ -68,12 +68,19 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
-  /author/delete/20:
+  /author/delete/{id}:
 
     delete:
       tags: [auhtor]
       summary: Delete Author
       operationId: AuthorDelete
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: Numeric ID or String slug of author to delete
       responses:
         204:
           description: The resource was deleted successfully
@@ -86,95 +93,1189 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
+  /author/get/{id}:
+
+    get:
+      tags: [auhtor]
+      summary: Get Author Detail by Id or Slug
+      operationId: GetAuthor
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: Numeric ID or String slug of author to get
+      responses:
+        200:
+          description: fetched record successfully
+          schema:
+            $ref: '#/definitions/AuthorGetRes'
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /author/get/all:
+
+    get:
+      tags: [auhtor]
+      summary: Get All Author Details
+      operationId: GetAllAuthor
+      responses:
+        200:
+          description: fetched record successfully
+          schema:
+            $ref: '#/definitions/AuthorGetRes'
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+#Genre Routes
+  /genre/create:
+
+    post:
+      tags: [Genre]
+      summary: create new Genre
+      operationId: GenreCreate
+      parameters:
+        - in: body
+          name: genre
+          description: Genre object that needs to be added to database
+          required: true
+          schema:
+            $ref: '#/definitions/CreateGenreReq'
+      responses:
+        201:
+          description: successful created genre
+          schema:
+            $ref: '#/definitions/CreateGenreRes'
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /genre/update:
+
+    put:
+      tags: [Genre]
+      summary: Update Genre
+      operationId: GenreUpdate
+      parameters:
+        - in: body
+          name: genre
+          description: genre object that needs to be updated in database
+          required: true
+          schema:
+            $ref: '#/definitions/UpdateGenreReq'
+      responses:
+        204:
+          description: The resource was updated successfully
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /genre/delete/{id}:
+
+    delete:
+      tags: [Genre]
+      summary: Delete Genre
+      operationId: GenreDelete
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: Numeric ID or String slug of genre to delete
+      responses:
+        204:
+          description: The resource was deleted successfully
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /genre/get/{id}:
+
+    get:
+      tags: [Genre]
+      summary: Get Genre Detail by Id or Slug
+      operationId: GetGenre
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: Numeric ID or String slug of genre to get
+      responses:
+        200:
+          description: fetched record successfully
+          schema:
+            $ref: '#/definitions/GenreGetRes'
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /genre/get/all:
+
+    get:
+      tags: [Genre]
+      summary: Get All Genre Details
+      operationId: GetAllGenre
+      responses:
+        200:
+          description: fetched record successfully
+          schema:
+            $ref: '#/definitions/GenreGetResAll'
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+#Publishers Routes
+  /publishers/create:
+
+    post:
+      tags: [Publishers]
+      summary: create new Publishers
+      operationId: GenrePublishers
+      parameters:
+        - in: body
+          name: Publishers
+          description: Publishers object that needs to be added to database
+          required: true
+          schema:
+            $ref: '#/definitions/CreatePublishersReq'
+      responses:
+        201:
+          description: successful created Publisher
+          schema:
+            $ref: '#/definitions/CreatePublishersRes'
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /publishers/update:
+
+    put:
+      tags: [Publishers]
+      summary: Update Publishers
+      operationId: PublishersUpdate
+      parameters:
+        - in: body
+          name: Publishers
+          description: Publishers object that needs to be updated in database
+          required: true
+          schema:
+            $ref: '#/definitions/UpdatePublishersReq'
+      responses:
+        204:
+          description: The resource was updated successfully
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /publishers/delete/{id}:
+
+    delete:
+      tags: [Publishers]
+      summary: Delete Publishers
+      operationId: PublishersDelete
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: Numeric ID or String slug of Publishers to delete
+      responses:
+        204:
+          description: The resource was deleted successfully
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /publishers/get/{id}:
+
+    get:
+      tags: [Publishers]
+      summary: Get Publishers Detail by Id or Slug
+      operationId: GetPublishers
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: Numeric ID or String slug of Publishers to get
+      responses:
+        200:
+          description: fetched record successfully
+          schema:
+            $ref: '#/definitions/PublishersGetRes'
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /publishers/get/all:
+
+    get:
+      tags: [Publishers]
+      summary: Get All Publishers Details
+      operationId: GetAllPublishers
+      responses:
+        200:
+          description: fetched record successfully
+          schema:
+            $ref: '#/definitions/PublishersGetRes'
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+#Book Routes
+  /book/create:
+
+    post:
+      tags: [Books]
+      summary: create new Books
+      operationId: GenreBooks
+      parameters:
+        - in: body
+          name: Books
+          description: Books object that needs to be added to database
+          required: true
+          schema:
+            $ref: '#/definitions/CreateBooksReq'
+      responses:
+        201:
+          description: successful created Book
+          schema:
+            $ref: '#/definitions/CreateBooksRes'
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /book/update:
+
+    put:
+      tags: [Books]
+      summary: Update Books
+      operationId: BooksUpdate
+      parameters:
+        - in: body
+          name: Books
+          description: Books object that needs to be updated in database
+          required: true
+          schema:
+            $ref: '#/definitions/UpdateBooksReq'
+      responses:
+        204:
+          description: The resource was updated successfully
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /book/delete/{id}:
+
+    delete:
+      tags: [Books]
+      summary: Delete Books
+      operationId: BooksDelete
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: number
+          required: true
+          description: Numeric ID of Book to delete
+      responses:
+        204:
+          description: The resource was deleted successfully
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /book/get/{id}:
+
+    get:
+      tags: [Books]
+      summary: Get Book Detail by Id or Slug
+      operationId: GetBooks
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: Numeric ID of Book to get
+      responses:
+        200:
+          description: fetched record successfully
+          schema:
+            $ref: '#/definitions/BooksGetRes'
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /book/get/all:
+
+    get:
+      tags: [Books]
+      summary: Get All Books Details
+      operationId: GetAllBooks
+      responses:
+        200:
+          description: fetched record successfully
+          schema:
+            $ref: '#/definitions/BooksGetRes'
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /book/search:
+
+    get:
+      tags: [Books]
+      summary: Search Book in DB by its name
+      operationId: SearchBooks
+      parameters:
+        - in: query
+          name: q
+          schema:
+            type: string
+          required: true
+          description: Book name query
+      responses:
+        200:
+          description: fetched record successfully
+          schema:
+            $ref: '#/definitions/BooksSearchGetRes'
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+
+
+
+
+#definitions of meta Data
 definitions:
 
-
-  UpdateAuthor:
-    type: object
-    properties:
-      id:
-        x-order: 0
-        type: int
-        example: 100
-        description: author id
-      name:
-        x-order: 1
-        type: string
-        example: ABC DEF
-        description: author name
-      about:
-        x-order: 2
-        $ref: '#/definitions/CreateAuthorAbout'
-      status:
-        x-order: 4
-        type: boolean
-        example: false
-        description: author status
-
-  AuthorCreateRes:
-    type: object
+  #Author definitions
+  AuthorGetRes:
+    required:
+      - success
+      - data
     properties:
       success:
-        x-order: 0
         type: boolean
         example: true
-        description: author name
       data:
-        x-order: 1
-        $ref: '#/definitions/CreateAuthorResData'
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: number
+              example: 2
+            name:
+              type: string
+              example: George Orwell
+            slug:
+              type: string
+              example: george-orwell
+            about:
+              required:
+                - years_active
+                - language
+                - personal
+              properties:
+                years_active:
+                  type: string
+                  example: 1940-11-12
+                language:
+                  type: string
+                  example: English
+                personal:
+                  required:
+                    - dob
+                    - info
+                  properties:
+                    dob:
+                      type: string
+                      example: 1899-02-27
+                    info:
+                      type: string
+                      example: True, Orwell (whose real name was Eric Arthur Blair) isn't everyone's taste, especially those who do not share his views on totalitarianism.But `Animal Farm` and `1984` are exemplary novels that truly get the reader to think more about politics, society and culture..
+                  type: object
+              type: object
+            status:
+              type: boolean
+              example: false
+            created_at:
+              type: string
+              example: 2020-03-01T11:11:32Z
+            updated_at:
+              type: string
+              example: 2020-03-01T11:11:32Z
 
-  CreateAuthorResData:
-    type: object
-    properties:
-      id:
-        x-order: 0
-        type: int
-        example: 10
-      slug:
-        x-order: 1
-        type: string
-        example: slug
 
-
-  CreateAuthor:
-    type: object
+  CreateAuthorReq:
+    required:
+      - name
+      - about
     properties:
       name:
-        x-order: 0
         type: string
-        example: ABC DEF
-        description: author name
+        example: Will Shakes
       about:
-        x-order: 1
-        $ref: '#/definitions/CreateAuthorAbout'
+        required:
+          - years_active
+          - language
+          - personal
+        properties:
+          years_active:
+            type: string
+            example: 1860-03-26
+          language:
+            type: string
+            example: English
+          personal:
+            required:
+              - dob
+              - info
+            properties:
+              dob:
+                type: string
+                example: 1810-12-12
+              info:
+                type: string
+                example: Chances are strong that you've read or seen at least one of his plays, but if it's been a while since you perused a copy of `The Tragedy of Hamlet` or `Macbeth`, it's time to reacquaint yourself with this master of language and storytelling.
+            type: object
+        type: object
 
 
-  CreateAuthorAbout:
-    type: object
+  UpdateAuthorReq:
+    required:
+      - id
+      - name
+      - about
+      - status
     properties:
-      years_active:
-        x-order: 0
+      id:
+        type: number
+        example: 7
+      name:
         type: string
-        example: "1810-12-12"
-      language:
-        x-order: 1
-        type: string
-        example: "English"
-      personal:
-        x-order: 2
-        $ref: '#/definitions/CreateAuthorAboutPersonal'
+        example: William Shakespeare
+      about:
+        required:
+          - years_active
+          - language
+          - personal
+        properties:
+          years_active:
+            type: string
+            example: 1860-03-26
+          language:
+            type: string
+            example: English
+          personal:
+            required:
+              - dob
+              - info
+            properties:
+              dob:
+                type: string
+                example: 1808-12-12
+              info:
+                type: string
+                example: Chances are strong that you've read or seen at least one of his plays, but if it's been a while since you perused a copy of `The Tragedy of Hamlet` or `Macbeth`, it's time to reacquaint yourself with this master of language and storytelling.
+            type: object
+        type: object
+      status:
+        type: boolean
+        example: true
 
-  CreateAuthorAboutPersonal:
-    type: object
+
+  CreateAuthorRes:
+    required:
+      - success
+      - data
     properties:
-      dob:
-        x-order: 0
+      success:
+        type: boolean
+        example: true
+      data:
+        required:
+          - id
+          - slug
+        properties:
+          id:
+            type: number
+            example: 10
+          slug:
+            type: string
+            example: will
+        type: object
+
+
+
+#Genre definitions
+
+  CreateGenreReq:
+    required:
+      - name
+    properties:
+      name:
         type: string
-        example: "1810-12-12"
-      info:
-        x-order: 1
+        example: Crime
+
+
+  CreateGenreRes:
+    required:
+      - success
+      - data
+    properties:
+      success:
+        type: boolean
+        example: true
+      data:
+        required:
+          - id
+          - slug
+        properties:
+          id:
+            type: number
+            example: 26
+          slug:
+            type: string
+            example: war
+        type: object
+
+
+  UpdateGenreReq:
+    required:
+      - id
+      - name
+      - status
+    properties:
+      id:
         type: string
-        example: "This is info"
+        example: 295
+      name:
+        type: string
+        example:    Crime
+      status:
+        type: boolean
+        example: true
+
+
+  GenreGetRes:
+    required:
+      - success
+      - data
+    properties:
+      success:
+        type: boolean
+        example: true
+      data:
+        required:
+          - id
+          - name
+          - slug
+          - status
+          - created_at
+          - updated_at
+        properties:
+          id:
+            type: string
+            example: 2
+          name:
+            type: string
+            example:  Fiction
+          slug:
+            type: string
+            example: fiction
+          status:
+            type: boolean
+            example: true
+          created_at:
+            type: string
+            example: 2020-02-27T18:42:23Z
+          updated_at:
+            type: string
+            example: 2020-02-27T18:42:23Z
+        type: object
+
+
+  GenreGetResAll:
+    required:
+      - success
+      - data
+    properties:
+      success:
+        type: boolean
+        example: true
+      data:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: string
+              example: 1
+            name:
+              type: string
+              example: History
+            slug:
+              type: string
+              example: history
+            status:
+              type: boolean
+              example: true
+            created_at:
+              type: string
+              example: 2020-02-27T18:42:01Z
+            updated_at:
+              type: string
+              example: 2020-02-27T17:59:29Z
+
+
+  #Publishers definitions
+
+  CreatePublishersReq:
+    required:
+      - name
+      - meta
+    properties:
+      name:
+        type: string
+        example: McGraw-Hill
+      meta:
+        required:
+          - founding_date
+          - desc
+        properties:
+          founding_date:
+            type: string
+            example: 1960-06-13
+          desc:
+            type: string
+            example: McGraw-Hill Education should ring a bell for anyone who’s experienced the magic of the American public school system. As one of the “big five” educational publishers
+        type: object
+
+  CreatePublishersRes:
+    required:
+      - success
+      - data
+    properties:
+      success:
+        type: boolean
+        example: true
+      data:
+        required:
+          - name
+          - slug
+        properties:
+          name:
+            type: number
+            example: 6
+          slug:
+            type: string
+            example: mcgraw
+        type: object
+
+  UpdatePublishersReq:
+    required:
+      - id
+      - name
+      - meta
+      - status
+    properties:
+      id:
+        type: number
+        example: 5
+      name:
+        type: string
+        example: McGraw-Hill
+      meta:
+        required:
+          - founding_date
+          - desc
+        properties:
+          founding_date:
+            type: string
+            example: 1960-06-13
+          desc:
+            type: string
+            example: McGraw-Hill Education should ring a bell for anyone who’s experienced the magic of the American public school system. As one of the “big five” educational publishers
+        type: object
+      status:
+        type: boolean
+        example: true
+
+  PublishersGetRes:
+    required:
+      - success
+      - data
+    properties:
+      success:
+        type: boolean
+        example: true
+      data:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: number
+              example: 1
+            name:
+              type: string
+              example: Penguin Random House
+            meta:
+              required:
+                - desc
+                - slug
+                - founding_date
+              properties:
+                desc:
+                  type: string
+                  example: It's considered to be the biggest publishing house in the industry. It has over 200 divisions and imprints
+                slug:
+                  type: string
+                  example: penguin-random-house
+                founding_date:
+                  type: string
+                  example: 2013-02-20T00:00:00Z
+              type: object
+            status:
+              type: boolean
+              example: true
+            created_at:
+              type: string
+              example: 2020-02-28T17:49:43Z
+            updated_at:
+              type: string
+              example: 2020-02-28T17:49:43Z
+
+
+  #Books definitions
+  CreateBooksReq:
+    required:
+      - name
+      - isbn
+      - image
+      - prices
+      - other
+      - langauge
+      - publisher_id
+      - published_at
+      - book_genre
+      - book_author
+    properties:
+      name:
+        type: string
+        example: Harry Potter and the Deathly Hallows
+      isbn:
+        type: string
+        example: 9781781100134
+      image:
+        type: string
+        example: https://vignette.wikia.nocookie.net/harrypotter/images/a/ab/Deathly_Hallows_1_poster.jpg
+      prices:
+        required:
+          - new
+          - old
+        properties:
+          new:
+            type: number
+            example: 900
+          old:
+            type: number
+            example: 340
+        type: object
+      other:
+        required:
+          - quantity
+          - type
+          - number_pages
+        properties:
+          quantity:
+            type: number
+            example: 100
+          type:
+            type: string
+            example: hard
+          number_pages:
+            type: number
+            example: 640
+        type: object
+      langauge:
+        type: string
+        example: English
+      publisher_id:
+        type: number
+        example: 3
+      published_at:
+        type: string
+        example: 2007-07-21
+      book_genre:
+        required:
+          - id
+        properties:
+          id:
+            type: array
+            items:
+              type: number
+            example:
+              - 6
+              - 7
+              - 8
+              - 9
+              - 12
+        type: object
+      book_author:
+        required:
+          - id
+        properties:
+          id:
+            type: array
+            items:
+              type: number
+            example:
+              - 3
+        type: object
+
+  CreateBooksRes:
+    required:
+      - success
+      - data
+    properties:
+      success:
+        type: boolean
+        example: true
+      data:
+        required:
+          - id
+        properties:
+          id:
+            type: number
+            example: 12
+        type: object
+
+  UpdateBooksReq:
+    required:
+      - Id
+      - status
+      - name
+      - isbn
+      - image
+      - prices
+      - other
+      - langauge
+      - publisher_id
+      - published_at
+      - book_genre
+      - book_author
+    properties:
+      Id:
+        type: number
+        example: 8
+      status:
+        type: boolean
+        example: true
+      name:
+        type: string
+        example: Romeo and Juliet
+      isbn:
+        type: string
+        example: 1586638459
+      image:
+        type: string
+        example: https://images-na.ssl-images-amazon.com/images/I/414ox%2BURkdL.jpg
+      prices:
+        required:
+          - new
+          - old
+        properties:
+          new:
+            type: number
+            example: 2123.12
+          old:
+            type: number
+            example: 780
+        type: object
+      other:
+        required:
+          - quantity
+          - type
+          - number_pages
+        properties:
+          quantity:
+            type: number
+            example: 100
+          type:
+            type: string
+            example: hard
+          number_pages:
+            type: number
+            example: 120
+        type: object
+      langauge:
+        type: string
+        example: English
+      publisher_id:
+        type: number
+        example: 2
+      published_at:
+        type: string
+        example: 2010-08-08
+      book_genre:
+        required:
+          - id
+        properties:
+          id:
+            type: array
+            items:
+              type: number
+            example:
+              - 5
+              - 13
+              - 7
+              - 6
+        type: object
+      book_author:
+        required:
+          - id
+        properties:
+          id:
+            type: array
+            items:
+              type: number
+            example:
+              - 2
+              - 7
+        type: object
+
+  BooksGetRes:
+    required:
+      - success
+      - data
+    properties:
+      success:
+        type: boolean
+        example: true
+      data:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: number
+              example: 8
+            name:
+              type: string
+              example: Romeo and Juliet
+            isbn:
+              type: string
+              example: 1586638459
+            langauge:
+              type: string
+              example: English
+            published_at:
+              type: string
+              example: 2010-08-08
+            image:
+              type: string
+              example: https://images-na.ssl-images-amazon.com/images/I/414ox%2BURkdL.jpg
+            book_publishers:
+              required:
+                - id
+                - name
+              properties:
+                id:
+                  type: number
+                  example: 2
+                name:
+                  type: string
+                  example: Hachette Livre
+              type: object
+            genre_details:
+              type: array
+              items:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 5
+                  name:
+                    type: string
+                    example:  Drama
+            author_details:
+              type: array
+              items:
+                type: object
+                properties:
+                  id:
+                    type: number
+                    example: 2
+                  name:
+                    type: string
+                    example: George Orwell
+            prices:
+              required:
+                - new
+                - old
+              properties:
+                new:
+                  type: number
+                  example: 2123.12
+                old:
+                  type: number
+                  example: 780
+              type: object
+            other:
+              required:
+                - quantity
+                - type
+                - number_pages
+              properties:
+                quantity:
+                  type: number
+                  example: 100
+                type:
+                  type: string
+                  example: hard
+                number_pages:
+                  type: number
+                  example: 120
+              type: object
+            status:
+              type: boolean
+              example: true
+            created_at:
+              type: string
+              example: 2020-03-02T11:16:34Z
+            updated_at:
+              type: string
+              example: 2020-03-03T06:51:23Z
+
+  BooksSearchGetRes:
+    required:
+      - success
+      - data
+    properties:
+      success:
+        type: boolean
+        example: true
+      data:
+        type: array
+        items:
+          type: object
+          properties:
+            id:
+              type: number
+              example: 8
+            name:
+              type: string
+              example: Romeo and Juliet
+            image:
+              type: string
+              example: https://images-na.ssl-images-amazon.com/images/I/414ox%2BURkdL.jpg
+
+
+
+#Error Object Response
 
   BadRequest:
     type: object

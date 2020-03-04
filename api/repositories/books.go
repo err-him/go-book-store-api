@@ -27,7 +27,7 @@ func NewBookRepo(db *sql.DB) models.BooksRepo {
  */
 func (b *BookRepo) Add(ctx context.Context, r *models.Books) (*models.Books, error) {
 	var resId int64
-	err := handler.WithTransaction(b.db, func(tx handler.Transaction) error {
+	err := helper.WithTransaction(b.db, func(tx helper.Transaction) error {
 		//insert record into `books` tables
 		res, err := tx.Exec(`Insert into books (name, isbn, price, langauge, quantity, book_type, old_price,publisher_id,number_pages,published_at,image) value (?, ?, ?, ?, ?, ? , ?, ?, ?, ?, ?)`, strings.TrimSpace(*r.Name), *r.ISBN, *r.Prices.NewPrice, *r.Language, *r.Other.Quantity, *r.Other.Type, *r.Prices.OldPrice, *r.PublisherId, *r.Other.NumberPages, r.PublishedAt.Format(cons.MYSQL_DATE_FORMAT), strings.TrimSpace(*r.Image))
 		if err != nil {
@@ -56,7 +56,7 @@ func (b *BookRepo) Add(ctx context.Context, r *models.Books) (*models.Books, err
 	})
 
 	if err != nil {
-		handler.HandleError(err)
+		helper.HandleError(err)
 		return nil, err
 	}
 	payload := &models.Books{
@@ -72,7 +72,7 @@ func (b *BookRepo) Add(ctx context.Context, r *models.Books) (*models.Books, err
  */
 func (b *BookRepo) Update(ctx context.Context, r *models.Books) (*models.Books, error) {
 	var resId = r.Id
-	err := handler.WithTransaction(b.db, func(tx handler.Transaction) error {
+	err := helper.WithTransaction(b.db, func(tx helper.Transaction) error {
 		//insert record into `books` tables
 		res, err := tx.Exec(`update  books set name = ?, isbn = ?, price = ?, langauge = ?, quantity = ?, old_price = ?,publisher_id = ?,number_pages = ?,published_at = ? , status = ?, book_type = ?, updated_at = ?, image = ? where id = ?`, strings.TrimSpace(*r.Name), *r.ISBN, *r.Prices.NewPrice, *r.Language, *r.Other.Quantity, *r.Prices.OldPrice, *r.PublisherId, *r.Other.NumberPages, r.PublishedAt.Format(cons.MYSQL_DATE_FORMAT), *r.Status, *r.Other.Type, time.Now(), strings.TrimSpace(*r.Image), r.Id)
 		if err != nil {
@@ -116,7 +116,7 @@ func (b *BookRepo) Update(ctx context.Context, r *models.Books) (*models.Books, 
 	})
 
 	if err != nil {
-		handler.HandleError(err)
+		helper.HandleError(err)
 		return nil, err
 	}
 	payload := &models.Books{

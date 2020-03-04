@@ -32,20 +32,20 @@ func (a *Author) CreateAuthor(w http.ResponseWriter, r *http.Request) {
 	req := models.AuthorCreateReq{}
 	err := json.NewDecoder(r.Body).Decode(&req)
 	if err != nil {
-		handler.HttpError(w, http.StatusBadRequest, hc.BAD_REQUEST, err)
+		helper.HttpError(w, http.StatusBadRequest, hc.BAD_REQUEST, err)
 		return
 	}
 	//validate the request
 	if req.Name == nil || req.About.YearsActive == nil || req.About.Language == nil || req.About.Personal.Dob == nil || req.About.Personal.Info == nil {
-		handler.HttpError(w, http.StatusBadRequest, hc.BAD_REQUEST, err)
+		helper.HttpError(w, http.StatusBadRequest, hc.BAD_REQUEST, err)
 		return
 	}
 	res, err := a.authorRepo.Create(r.Context(), &req)
 	if err != nil {
-		handler.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
+		helper.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
 		return
 	}
-	handler.HttpResponse(w, http.StatusCreated, res)
+	helper.HttpResponse(w, http.StatusCreated, res)
 }
 
 /**
@@ -70,10 +70,10 @@ func (a *Author) GetAll(w http.ResponseWriter, r *http.Request) {
 	}
 	res, err := a.authorRepo.GetAll(r.Context(), limit, offset)
 	if err != nil {
-		handler.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
+		helper.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
 		return
 	}
-	handler.HttpResponse(w, http.StatusOK, res)
+	helper.HttpResponse(w, http.StatusOK, res)
 }
 
 /**
@@ -86,10 +86,10 @@ func (a *Author) GetOne(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	res, err := a.authorRepo.GetOne(r.Context(), vars["id"])
 	if err != nil {
-		handler.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
+		helper.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
 		return
 	}
-	handler.HttpResponse(w, http.StatusOK, res)
+	helper.HttpResponse(w, http.StatusOK, res)
 }
 
 /**
@@ -102,10 +102,10 @@ func (a *Author) Delete(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)
 	res, err := a.authorRepo.Delete(r.Context(), vars["id"])
 	if err != nil {
-		handler.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
+		helper.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
 		return
 	}
-	handler.HttpResponse(w, http.StatusNoContent, res)
+	helper.HttpResponse(w, http.StatusNoContent, res)
 }
 
 /**
@@ -117,18 +117,18 @@ func (a *Author) UpdateAuthor(w http.ResponseWriter, r *http.Request) {
 	req := models.AuthorCreateReq{}
 	err := json.NewDecoder(r.Body).Decode(&req)
 	if err != nil {
-		handler.HttpError(w, http.StatusBadRequest, err.Error(), err.Error())
+		helper.HttpError(w, http.StatusBadRequest, err.Error(), err.Error())
 		return
 	}
 	//validate Request
 	if req.Id == nil || req.Name == nil || req.About.YearsActive == nil || req.About.Language == nil || req.About.Personal.Dob == nil || req.About.Personal.Info == nil || req.Status == nil {
-		handler.HttpError(w, http.StatusBadRequest, hc.BAD_REQUEST, err)
+		helper.HttpError(w, http.StatusBadRequest, hc.BAD_REQUEST, err)
 		return
 	}
 	res, err := a.authorRepo.Update(r.Context(), &req)
 	if err != nil {
-		handler.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
+		helper.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
 		return
 	}
-	handler.HttpResponse(w, http.StatusNoContent, res)
+	helper.HttpResponse(w, http.StatusNoContent, res)
 }
