@@ -2,16 +2,28 @@ consumes:
 - application/json
 definitions: {}
 info:
-  description: Golang productio ready book store rest api
+  description: |
+    A production ready sample Book store RESTful API with Go using **gorilla/mux** **uber/Zap** **lumberjack** with **Mysql** (A nice relational Database). This Project contains a golang implementation of Swagger 2.0 (aka OpenAPI 2.0): it knows how to serialize and deserialize swagger specifications.
   title: Book Store Rest Api - GoLang
   version: 0.1.0
+  schemes:
+      license:
+      name: 'Apache 2.0'
+      url: https://www.apache.org/licenses/LICENSE-2.0
+  termsOfService: |
+    There are actually none.
+    This is for demonstration purpose only.
+  contact:
+    name: Himanshu Gupta
+    email: err.himanshu@gmail.com
+    url: https://github.com/err-him
 host: localhost:9002
 basePath: /api/v1
 paths: {}
 produces:
 - application/json
-schemes:
 - http
+- https
 swagger: "2.0"
 
 paths:
