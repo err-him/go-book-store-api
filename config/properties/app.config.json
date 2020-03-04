@@ -1,3 +1,6 @@
 {
-  "port" : "9002"
+  "port" : "9002",
+  "ApiKey":"mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN",
+  "passwordSalt":"yhh$9*12G",
+  "jwtSecurityToken":"JW*el7L5eP6z49i9883f0VDQQC1b2r2Whm@ov7GcMUV7mAa&9KOnwR@7v*@KotBbbBs@M#SXVZliSr2T"
 }

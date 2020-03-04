@@ -5,11 +5,7 @@ const (
 	INTERNAL_SERVER_ERROR = "Internal server error occured, try after some time"
 	NOT_FOUND             = "Not found"
 	INVALID_SEARCH_PARAM  = "invalid Search param"
-)
-
-//limit for offset and limit for get all
-const (
-	OFFSET            = 0
-	LIMIT             = 8
-	MYSQL_DATE_FORMAT = "2006-01-02"
+	UNAUTHRIZED_REQUEST   = "Forbidden, Invalid Api Key"
+	AUTH_TOKEN_MISSING    = "UnAuthorized Request, Missing Authorization Token"
+	INVALID_AUTH_TOKEN    = "UnAuthorized Request, Invalid Authorization Token"
 )

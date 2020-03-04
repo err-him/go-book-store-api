@@ -229,7 +229,19 @@ Also created nice Makefile for the same, to run via make enter:
 - [√] Organize the code with packages
 - [√] Add logging to application
 - [ ] Add zipkin for tracing
-- [ ] Make docs with GoDoc
-- [√] Setting up the swagger
+- [√] Api documentation with Swagger
 - [ ] Dockerized the application
 - [ ] Building a deployment process
+
+## Issues Management
+
+Feel free to open an issue if you come across any bugs or
+if you'd like to request a new feature.
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b new-feature`)
+3. Commit your changes (`git commit -am 'Some cool changes'`)
+4. Push to the branch (`git push origin new-feature`)
+5. Create new Pull Request
