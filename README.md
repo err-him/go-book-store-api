@@ -207,7 +207,7 @@ Also created nice Makefile for the same, to run via make enter:
 * **delete/{:id}** `DELETE` : delete Author - Soft delete by specified id or slug
 
 
-#### /book
+#### /books
 * **/create** `POST` : Create Book
 * **/update** `PUT` : update  Book
 * **/get/all** `GET` : Get all Books
@@ -215,11 +215,15 @@ Also created nice Makefile for the same, to run via make enter:
 * **delete/{:id}** `DELETE` : delete Book - Soft delete by Id
 * **search?q={:query}** `GET` : Search book - by its Name
 
+#### /users
+* **/create** `POST` : Create User
+* **/verify** `PUT` : Verify  Book
+
 
 ## Todo
 
 - [√] Support basic REST APIs.
-- [ ] Support Authentication with user for securing the APIs.
+- [√] Support Authentication with user for securing the APIs.
 - [√] Make convenient wrappers for creating API handlers.
 - [ ] Write the tests for all APIs.
 - [√] Organize the code with packages
