@@ -226,6 +226,6 @@ Also created nice Makefile for the same, to run via make enter:
 - [√] Add logging to application
 - [ ] Add zipkin for tracing
 - [ ] Make docs with GoDoc
-- [ ] Setting up the swagger
+- [√] Setting up the swagger
 - [ ] Dockerized the application
 - [ ] Building a deployment process
