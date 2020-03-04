@@ -58,3 +58,9 @@ func HttpResponse(w http.ResponseWriter, status int, payload interface{}) {
 
 	NewHttpResponse(w, status, true, payload, nil)
 }
+
+func HandleError(err error) {
+	if err != nil {
+		logger.Errorf("Error While processing Request", err, err.Error())
+	}
+}

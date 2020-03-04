@@ -2,10 +2,10 @@ package controllers
 
 import (
 	hc "book-store-api/api/constants"
-	"book-store-api/api/handler"
 	"book-store-api/api/models"
 	r "book-store-api/api/repositories"
 	"book-store-api/config/driver"
+	"book-store-api/handler"
 	"encoding/json"
 	"net/http"
 	"strconv"

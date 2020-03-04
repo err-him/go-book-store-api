@@ -2,7 +2,7 @@
 Go Sample project to understand Mysql CRUD operation with best practises
 
 
-A production ready sample Book store RESTful API with Go using **gorilla/mux** **uber/Zap** **lumberjack** with **Mysql** (A nice relational Database)
+A production ready sample Book store RESTful API with Go using **gorilla/mux** **uber/Zap** **lumberjack** with **Mysql** (A nice relational Database). This Project contains a golang implementation of Swagger 2.0 (aka OpenAPI 2.0): it knows how to serialize and deserialize swagger specifications.
 
 ## Installation & Run
 ```bash
@@ -84,7 +84,104 @@ api  -> Api package is used to receive an incoming request, validate the request
     api/repositories ->   repository package is a wrapper on database and cache, so no other package can directly access the database. This package handle all create, update, fetch and delete operation on database tables or cache.
     api/utils ->    contains all application utility function.
 
+db.sql -> file contains db schema and data information, dumped data from mysql
+          command for dump database => `mysqldump -u root -p book_store > /Users/himanshu/go-learning/book-store-api/db.sql`
+
+swagger.yml -> swagger API documentation configuration          
+
 ```
+## OpenAPI & Swagger - API DOCUMENTATION
+### ***Introduction to OpenAPI & Swagger Open Source Tools***
+
+## OpenAPI & Swagger
+
+### OpenAPI
+
+**OpenAPI Specification** (formerly Swagger Specification) is an API description format for REST APIs. An OpenAPI file allows you to describe your entire API, including:
+
+* Available endpoints (```/users```) and operations on each endpoint (```GET /users```, ```POST /users```)
+* Operation parameters Input and output for each operation
+* Authentication methods
+* Contact information, license, terms of use and other information.
+
+API specifications can be written in YAML or JSON. The format is easy to learn and readable to both humans and machines. The complete OpenAPI Specification can be found on GitHub:
+[OpenAPI 2.0 Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md),
+[OpenAPI 3.0 Specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md)
+
+### Swagger
+
+Swagger is a set of open-source tools built around the OpenAPI Specification that can help you design, build, document and consume REST APIs. The major Swagger tools include:
+Swagger allows you to describe the structure of your APIs so that machines can read them. The ability of APIs to describe their own structure is the root of all awesomeness in Swagger.
+
+* [Swagger Editor](http://editor.swagger.io/?_ga=2.27098621.139862542.1529283950-1958724428.1521772135) – browser-based editor where you can write OpenAPI specs.
+* [Swagger Codegen](https://github.com/swagger-api/swagger-codegen) – generates server stubs and client libraries from an OpenAPI spec.
+* [Swagger UI](https://swagger.io/swagger-ui/) – renders OpenAPI specs as interactive API documentation.
+
+## Introduction to OpenAPI Specification
+
+### **Basic Structure**
+Swagger can be written in JSON or YAML. In this guide, we only use YAML examples, but JSON works equally well. A sample Swagger specification written in YAML looks like:
+
+```yaml
+swagger: "2.0"
+info:
+  title: Sample API
+  description: API description in Markdown.
+  version: 1.0.0
+host: api.example.com
+basePath: /v1
+schemes:
+  - https
+paths:
+  /users:
+    get:
+      summary: Returns a list of users.
+      description: Optional extended description in Markdown.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+```
+
+
+
+## Quick Start Swagger
+
+ This Project contains a golang implementation of Swagger 2.0 (aka OpenAPI 2.0): it knows how to serialize and deserialize swagger specifications.
+
+ `go-swagger` brings to the go community a complete suite of fully-featured, high-performance, API components to work with a Swagger API
+
+**Installation Go Swagger**
+To install Go SWAGGER in Mac, type following command
+
+```
+brew tap go-swagger/go-swagger
+brew install go-swagger
+```
+Once Installation complete go to project repo and generate swagger documentation by following command
+
+` swagger serve -F=swagger ./swagger.yml `
+
+Also created nice Makefile for the same, to run via make enter:
+`make serve-swagger`
+
+** Swagger UI**
+![Swagger UI](https://github.com/err-him/go-book-store-api/blob/develop/assets/swagger/Screenshot%202020-03-04%20at%2012.15.37%20PM.png)
+![Swagger UI](https://github.com/err-him/go-book-store-api/blob/develop/assets/swagger/Screenshot%202020-03-03%20at%206.42.14%20PM.png)
+![Swagger UI](https://github.com/err-him/go-book-store-api/blob/develop/assets/swagger/Screenshot%202020-03-03%20at%206.42.37%20PM.png)
+![Swagger UI](https://github.com/err-him/go-book-store-api/blob/develop/assets/swagger/Screenshot%202020-03-03%20at%206.42.45%20PM.png)
+![Swagger UI](https://github.com/err-him/go-book-store-api/blob/develop/assets/swagger/Screenshot%202020-03-03%20at%206.42.58%20PM.png)
+![Swagger UI](https://github.com/err-him/go-book-store-api/blob/develop/assets/swagger/Screenshot%202020-03-03%20at%206.42.58%20PM.png)
+![Swagger UI](https://github.com/err-him/go-book-store-api/blob/develop/assets/swagger/Screenshot%202020-03-03%20at%206.43.07%20PM.png)
+
+
+
+
+
+
+
+
 
 ## API
 
@@ -109,16 +206,42 @@ api  -> Api package is used to receive an incoming request, validate the request
 * **get/{:id}** `GET` : Get One Author - specified by Id or Genre slug
 * **delete/{:id}** `DELETE` : delete Author - Soft delete by specified id or slug
 
+
+#### /books
+* **/create** `POST` : Create Book
+* **/update** `PUT` : update  Book
+* **/get/all** `GET` : Get all Books
+* **get/{:id}** `GET` : Get One Book - specified by Id
+* **delete/{:id}** `DELETE` : delete Book - Soft delete by Id
+* **search?q={:query}** `GET` : Search book - by its Name
+
+#### /users
+* **/create** `POST` : Create User
+* **/verify** `PUT` : Verify  Book
+
+
 ## Todo
 
 - [√] Support basic REST APIs.
-- [ ] Support Authentication with user for securing the APIs.
+- [√] Support Authentication with user for securing the APIs.
 - [√] Make convenient wrappers for creating API handlers.
 - [ ] Write the tests for all APIs.
 - [√] Organize the code with packages
 - [√] Add logging to application
 - [ ] Add zipkin for tracing
-- [ ] Make docs with GoDoc
-- [ ] Setting up the swagger
+- [√] Api documentation with Swagger
 - [ ] Dockerized the application
 - [ ] Building a deployment process
+
+## Issues Management
+
+Feel free to open an issue if you come across any bugs or
+if you'd like to request a new feature.
+
+## Contributing
+
+1. Fork it
+2. Create your feature branch (`git checkout -b new-feature`)
+3. Commit your changes (`git commit -am 'Some cool changes'`)
+4. Push to the branch (`git push origin new-feature`)
+5. Create new Pull Request
