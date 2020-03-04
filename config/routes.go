@@ -3,6 +3,8 @@ package config
 import (
 	"book-store-api/api/controllers"
 	"book-store-api/config/driver"
+	"book-store-api/middleware"
+	mw "book-store-api/middleware"
 	"net/http"
 
 	"github.com/gorilla/mux"
@@ -14,9 +16,10 @@ func handleAppRoutes(r *mux.Router, db *driver.DB) {
 	pubHandler := controllers.NewPublisherHandler(db)
 	authorhandler := controllers.NewAuthorHandler(db)
 	bookHandler := controllers.NewBookHandler(db)
+	userHandler := controllers.NewUserHandler(db)
+
 	//handling API versioning
 	v1 := r.PathPrefix("/api/v1").Subrouter()
-
 	//genre routes
 	v1.HandleFunc("/genre/create", genreHandler.CreateGenre).Methods(http.MethodPost)
 	v1.HandleFunc("/genre/update", genreHandler.UpdateGenre).Methods(http.MethodPut)
@@ -43,6 +46,14 @@ func handleAppRoutes(r *mux.Router, db *driver.DB) {
 	v1.HandleFunc("/book/update", bookHandler.UpdateBook).Methods(http.MethodPut)
 	v1.HandleFunc("/book/delete/{id}", bookHandler.DeleteBook).Methods(http.MethodDelete)
 	v1.HandleFunc("/book/get/all", bookHandler.GetAll).Methods(http.MethodGet)
-	v1.HandleFunc("/book/get/{id}", bookHandler.GetOne).Methods(http.MethodGet)
+	//Jwt Authentication middleware
+	v1.Handle("/book/get/{id}", mw.JWTAuthMiddleware(http.HandlerFunc(bookHandler.GetOne))).Methods(http.MethodGet)
 	v1.HandleFunc("/book/search", bookHandler.SearchBook).Methods(http.MethodGet)
+
+	//Users Routes
+	v1.HandleFunc("/users/create", userHandler.CreateUser).Methods(http.MethodPost)
+	v1.HandleFunc("/users/verify", userHandler.VerifyUser).Methods(http.MethodPost)
+
+	//Api Key validation middleare for all routes
+	v1.Use(middleware.ApiKeyMiddleware)
 }

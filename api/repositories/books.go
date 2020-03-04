@@ -4,6 +4,7 @@ import (
 	cons "book-store-api/api/constants"
 	"book-store-api/api/helper"
 	"book-store-api/api/models"
+	"book-store-api/handler"
 	"context"
 	"database/sql"
 	"strings"
@@ -56,7 +57,7 @@ func (b *BookRepo) Add(ctx context.Context, r *models.Books) (*models.Books, err
 	})
 
 	if err != nil {
-		helper.HandleError(err)
+		handler.HandleError(err)
 		return nil, err
 	}
 	payload := &models.Books{
@@ -116,7 +117,7 @@ func (b *BookRepo) Update(ctx context.Context, r *models.Books) (*models.Books, 
 	})
 
 	if err != nil {
-		helper.HandleError(err)
+		handler.HandleError(err)
 		return nil, err
 	}
 	payload := &models.Books{
