@@ -3,7 +3,7 @@ consumes:
 definitions: {}
 info:
   description: |
-    A production ready sample Book store RESTful API with Go using **gorilla/mux** **uber/Zap** **lumberjack** with **Mysql** (A nice relational Database). This Project contains a golang implementation of Swagger 2.0 (aka OpenAPI 2.0): it knows how to serialize and deserialize swagger specifications.
+    A production ready sample Book store RESTful API with Go using **gorilla/mux** **uber/Zap** **lumberjack** with **Mysql** (A nice relational Database) and includes JWT Authentication with protected routes. This Project contains a golang implementation of Swagger 2.0 (aka OpenAPI 2.0): it knows how to serialize and deserialize swagger specifications.
   title: Book Store Rest Api - GoLang
   version: 0.1.0
   schemes:
@@ -41,7 +41,18 @@ paths:
           required: true
           schema:
             $ref: '#/definitions/CreateAuthorReq'
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
+
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         201:
           description: successful created author
           schema:
@@ -68,7 +79,17 @@ paths:
           required: true
           schema:
             $ref: '#/definitions/UpdateAuthorReq'
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         204:
           description: The resource was updated successfully
         400:
@@ -93,7 +114,17 @@ paths:
             type: string
           required: true
           description: Numeric ID or String slug of author to delete
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         204:
           description: The resource was deleted successfully
         400:
@@ -118,7 +149,17 @@ paths:
             type: string
           required: true
           description: Numeric ID or String slug of author to get
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         200:
           description: fetched record successfully
           schema:
@@ -138,7 +179,18 @@ paths:
       tags: [auhtor]
       summary: Get All Author Details
       operationId: GetAllAuthor
+      parameters:
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         200:
           description: fetched record successfully
           schema:
@@ -166,7 +218,17 @@ paths:
           required: true
           schema:
             $ref: '#/definitions/CreateGenreReq'
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         201:
           description: successful created genre
           schema:
@@ -193,7 +255,17 @@ paths:
           required: true
           schema:
             $ref: '#/definitions/UpdateGenreReq'
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         204:
           description: The resource was updated successfully
         400:
@@ -218,7 +290,17 @@ paths:
             type: string
           required: true
           description: Numeric ID or String slug of genre to delete
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         204:
           description: The resource was deleted successfully
         400:
@@ -243,7 +325,17 @@ paths:
             type: string
           required: true
           description: Numeric ID or String slug of genre to get
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         200:
           description: fetched record successfully
           schema:
@@ -263,7 +355,18 @@ paths:
       tags: [Genre]
       summary: Get All Genre Details
       operationId: GetAllGenre
+      parameters:
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         200:
           description: fetched record successfully
           schema:
@@ -291,7 +394,17 @@ paths:
           required: true
           schema:
             $ref: '#/definitions/CreatePublishersReq'
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         201:
           description: successful created Publisher
           schema:
@@ -318,6 +431,12 @@ paths:
           required: true
           schema:
             $ref: '#/definitions/UpdatePublishersReq'
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
         204:
           description: The resource was updated successfully
@@ -343,7 +462,17 @@ paths:
             type: string
           required: true
           description: Numeric ID or String slug of Publishers to delete
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         204:
           description: The resource was deleted successfully
         400:
@@ -368,7 +497,17 @@ paths:
             type: string
           required: true
           description: Numeric ID or String slug of Publishers to get
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         200:
           description: fetched record successfully
           schema:
@@ -388,7 +527,18 @@ paths:
       tags: [Publishers]
       summary: Get All Publishers Details
       operationId: GetAllPublishers
+      parameters:
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         200:
           description: fetched record successfully
           schema:
@@ -416,7 +566,17 @@ paths:
           required: true
           schema:
             $ref: '#/definitions/CreateBooksReq'
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         201:
           description: successful created Book
           schema:
@@ -443,7 +603,17 @@ paths:
           required: true
           schema:
             $ref: '#/definitions/UpdateBooksReq'
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         204:
           description: The resource was updated successfully
         400:
@@ -468,7 +638,17 @@ paths:
             type: number
           required: true
           description: Numeric ID of Book to delete
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         204:
           description: The resource was deleted successfully
         400:
@@ -493,7 +673,17 @@ paths:
             type: string
           required: true
           description: Numeric ID of Book to get
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         200:
           description: fetched record successfully
           schema:
@@ -513,7 +703,18 @@ paths:
       tags: [Books]
       summary: Get All Books Details
       operationId: GetAllBooks
+      parameters:
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         200:
           description: fetched record successfully
           schema:
@@ -540,7 +741,17 @@ paths:
             type: string
           required: true
           description: Book name query
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
       responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         200:
           description: fetched record successfully
           schema:
@@ -1330,3 +1541,19 @@ definitions:
       message:
         type: string
         example: Internal server error occured, try after some time
+
+  ErrForbidden:
+    type: object
+    properties:
+      success:
+        type: boolean
+        example: false
+      error:
+        properties:
+          code:
+            type: number
+            example: 403
+          message:
+            type: string
+            example: Forbidden, Invalid Api Key
+        type: object

@@ -14,7 +14,7 @@ const (
 	methods           string = "POST, GET, OPTIONS, PUT, DELETE, HEAD, PATCH"
 
 	// If you want to expose some other headers add it here
-	headers string = "Access-Control-Allow-Origin, Accept, Accept-Encoding, Authorization, Content-Length, Content-Type, X-CSRF-Token"
+	headers string = "Access-Control-Allow-Origin, Accept, Accept-Encoding, Authorization, Content-Length, Content-Type, X-CSRF-Token,ApiKey"
 )
 
 // Handler will allow cross-origin HTTP requests

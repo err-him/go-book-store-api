@@ -2,7 +2,7 @@
 Go Sample project to understand Mysql CRUD operation with best practises
 
 
-A production ready sample Book store RESTful API with Go using **gorilla/mux** **uber/Zap** **lumberjack** with **Mysql** (A nice relational Database). This Project contains a golang implementation of Swagger 2.0 (aka OpenAPI 2.0): it knows how to serialize and deserialize swagger specifications.
+A production ready sample Book store RESTful API with Go using **gorilla/mux** **uber/Zap** **lumberjack** with **Mysql** (A nice relational Database), JWT Authentication. This Project contains a golang implementation of Swagger 2.0 (aka OpenAPI 2.0): it knows how to serialize and deserialize swagger specifications.
 
 ## Installation & Run
 ```bash
