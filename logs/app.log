@@ -21,3 +21,76 @@ net/http.serverHandler.ServeHTTP
 	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
 net/http.(*conn).serve
 	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-05T11:01:36.122+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={401 UnAuthorized Request, Invalid Authorization Token}, *url.URL=/api/v1/book/get/all)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/handler/response.go:50
+book-store-api/middleware.JWTAuthMiddleware.func1
+	/Users/himanshu/go-learning/book-store-api/middleware/jwt.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+book-store-api/middleware.ApiKeyMiddleware.func1
+	/Users/himanshu/go-learning/book-store-api/middleware/auth.go:27
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+book-store-api/handler.CORS.func1
+	/Users/himanshu/go-learning/book-store-api/handler/cors.go:43
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-05T11:08:40.541+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={403 Forbidden, Invalid Api Key}, *url.URL=/api/v1/author/delete/2)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/handler/response.go:50
+book-store-api/middleware.ApiKeyMiddleware.func1
+	/Users/himanshu/go-learning/book-store-api/middleware/auth.go:19
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+book-store-api/handler.CORS.func1
+	/Users/himanshu/go-learning/book-store-api/handler/cors.go:43
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890
+2020-03-05T11:09:02.216+0530	ERROR	logger/zap.go:41	Error While processing Request%!(EXTRA handler.Error={403 Forbidden, Invalid Api Key}, *url.URL=/api/v1/author/delete/3)
+github.com/err-him/gozap.(*zapLogger).Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/zap.go:93
+github.com/err-him/gozap.Errorf
+	/Users/himanshu/go/pkg/mod/github.com/err-him/gozap@v0.0.0-20200220171722-2adb514e683e/logger.go:80
+book-store-api/logger.Errorf
+	/Users/himanshu/go-learning/book-store-api/logger/zap.go:41
+book-store-api/handler.HttpError
+	/Users/himanshu/go-learning/book-store-api/handler/response.go:50
+book-store-api/middleware.ApiKeyMiddleware.func1
+	/Users/himanshu/go-learning/book-store-api/middleware/auth.go:24
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+github.com/gorilla/mux.(*Router).ServeHTTP
+	/Users/himanshu/go/pkg/mod/github.com/gorilla/mux@v1.7.4/mux.go:210
+book-store-api/handler.CORS.func1
+	/Users/himanshu/go-learning/book-store-api/handler/cors.go:43
+net/http.HandlerFunc.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2007
+net/http.serverHandler.ServeHTTP
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:2802
+net/http.(*conn).serve
+	/usr/local/Cellar/go/1.13.8/libexec/src/net/http/server.go:1890

@@ -47,8 +47,18 @@ paths:
             type: string
             example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
           required: true
+        - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiSGltYW5zaHUiLCJ1c2VyS2V5IjoieHlWWnhKbndhR0xqcWY5bHBjYkRJdWZJVW9QT21RIiwiZXhwIjoxNTgzMzg4MDI1fQ.s4WBkVlWuCTwSiczZfk8VQiRpLaA8qOypMgcKmjFQdI
+          required: true
 
       responses:
+        401:
+          description: UnAuthorized, Invalid Authorization Token
+          schema:
+            $ref: '#/definitions/ErrUnAuthrized'
         403:
           description: Forbidden, Invalid Api Key
           schema:
@@ -85,7 +95,17 @@ paths:
             type: string
             example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
           required: true
+        - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiSGltYW5zaHUiLCJ1c2VyS2V5IjoieHlWWnhKbndhR0xqcWY5bHBjYkRJdWZJVW9QT21RIiwiZXhwIjoxNTgzMzg4MDI1fQ.s4WBkVlWuCTwSiczZfk8VQiRpLaA8qOypMgcKmjFQdI
+          required: true
       responses:
+        401:
+          description: UnAuthorized, Invalid Authorization Token
+          schema:
+            $ref: '#/definitions/ErrUnAuthrized'
         403:
           description: Forbidden, Invalid Api Key
           schema:
@@ -120,7 +140,17 @@ paths:
             type: string
             example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
           required: true
+        - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiSGltYW5zaHUiLCJ1c2VyS2V5IjoieHlWWnhKbndhR0xqcWY5bHBjYkRJdWZJVW9QT21RIiwiZXhwIjoxNTgzMzg4MDI1fQ.s4WBkVlWuCTwSiczZfk8VQiRpLaA8qOypMgcKmjFQdI
+          required: true
       responses:
+        401:
+          description: UnAuthorized, Invalid Authorization Token
+          schema:
+            $ref: '#/definitions/ErrUnAuthrized'
         403:
           description: Forbidden, Invalid Api Key
           schema:
@@ -224,7 +254,17 @@ paths:
             type: string
             example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
           required: true
+        - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiSGltYW5zaHUiLCJ1c2VyS2V5IjoieHlWWnhKbndhR0xqcWY5bHBjYkRJdWZJVW9QT21RIiwiZXhwIjoxNTgzMzg4MDI1fQ.s4WBkVlWuCTwSiczZfk8VQiRpLaA8qOypMgcKmjFQdI
+          required: true
       responses:
+        401:
+          description: UnAuthorized, Invalid Authorization Token
+          schema:
+            $ref: '#/definitions/ErrUnAuthrized'
         403:
           description: Forbidden, Invalid Api Key
           schema:
@@ -261,7 +301,17 @@ paths:
             type: string
             example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
           required: true
+        - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiSGltYW5zaHUiLCJ1c2VyS2V5IjoieHlWWnhKbndhR0xqcWY5bHBjYkRJdWZJVW9QT21RIiwiZXhwIjoxNTgzMzg4MDI1fQ.s4WBkVlWuCTwSiczZfk8VQiRpLaA8qOypMgcKmjFQdI
+          required: true
       responses:
+        401:
+          description: UnAuthorized, Invalid Authorization Token
+          schema:
+            $ref: '#/definitions/ErrUnAuthrized'
         403:
           description: Forbidden, Invalid Api Key
           schema:
@@ -296,7 +346,17 @@ paths:
             type: string
             example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
           required: true
+        - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiSGltYW5zaHUiLCJ1c2VyS2V5IjoieHlWWnhKbndhR0xqcWY5bHBjYkRJdWZJVW9QT21RIiwiZXhwIjoxNTgzMzg4MDI1fQ.s4WBkVlWuCTwSiczZfk8VQiRpLaA8qOypMgcKmjFQdI
+          required: true
       responses:
+        401:
+          description: UnAuthorized, Invalid Authorization Token
+          schema:
+            $ref: '#/definitions/ErrUnAuthrized'
         403:
           description: Forbidden, Invalid Api Key
           schema:
@@ -400,7 +460,17 @@ paths:
             type: string
             example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
           required: true
+        - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiSGltYW5zaHUiLCJ1c2VyS2V5IjoieHlWWnhKbndhR0xqcWY5bHBjYkRJdWZJVW9QT21RIiwiZXhwIjoxNTgzMzg4MDI1fQ.s4WBkVlWuCTwSiczZfk8VQiRpLaA8qOypMgcKmjFQdI
+          required: true
       responses:
+        401:
+          description: UnAuthorized, Invalid Authorization Token
+          schema:
+            $ref: '#/definitions/ErrUnAuthrized'
         403:
           description: Forbidden, Invalid Api Key
           schema:
@@ -437,7 +507,21 @@ paths:
             type: string
             example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
           required: true
+        - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiSGltYW5zaHUiLCJ1c2VyS2V5IjoieHlWWnhKbndhR0xqcWY5bHBjYkRJdWZJVW9QT21RIiwiZXhwIjoxNTgzMzg4MDI1fQ.s4WBkVlWuCTwSiczZfk8VQiRpLaA8qOypMgcKmjFQdI
+          required: true
       responses:
+        401:
+          description: UnAuthorized, Invalid Authorization Token
+          schema:
+            $ref: '#/definitions/ErrUnAuthrized'
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
         204:
           description: The resource was updated successfully
         400:
@@ -468,7 +552,17 @@ paths:
             type: string
             example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
           required: true
+        - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiSGltYW5zaHUiLCJ1c2VyS2V5IjoieHlWWnhKbndhR0xqcWY5bHBjYkRJdWZJVW9QT21RIiwiZXhwIjoxNTgzMzg4MDI1fQ.s4WBkVlWuCTwSiczZfk8VQiRpLaA8qOypMgcKmjFQdI
+          required: true
       responses:
+        401:
+          description: UnAuthorized, Invalid Authorization Token
+          schema:
+            $ref: '#/definitions/ErrUnAuthrized'
         403:
           description: Forbidden, Invalid Api Key
           schema:
@@ -572,7 +666,17 @@ paths:
             type: string
             example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
           required: true
+        - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiSGltYW5zaHUiLCJ1c2VyS2V5IjoieHlWWnhKbndhR0xqcWY5bHBjYkRJdWZJVW9QT21RIiwiZXhwIjoxNTgzMzg4MDI1fQ.s4WBkVlWuCTwSiczZfk8VQiRpLaA8qOypMgcKmjFQdI
+          required: true
       responses:
+        401:
+          description: UnAuthorized, Invalid Authorization Token
+          schema:
+            $ref: '#/definitions/ErrUnAuthrized'
         403:
           description: Forbidden, Invalid Api Key
           schema:
@@ -609,7 +713,17 @@ paths:
             type: string
             example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
           required: true
+        - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiSGltYW5zaHUiLCJ1c2VyS2V5IjoieHlWWnhKbndhR0xqcWY5bHBjYkRJdWZJVW9QT21RIiwiZXhwIjoxNTgzMzg4MDI1fQ.s4WBkVlWuCTwSiczZfk8VQiRpLaA8qOypMgcKmjFQdI
+          required: true
       responses:
+        401:
+          description: UnAuthorized, Invalid Authorization Token
+          schema:
+            $ref: '#/definitions/ErrUnAuthrized'
         403:
           description: Forbidden, Invalid Api Key
           schema:
@@ -644,7 +758,17 @@ paths:
             type: string
             example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
           required: true
+        - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiSGltYW5zaHUiLCJ1c2VyS2V5IjoieHlWWnhKbndhR0xqcWY5bHBjYkRJdWZJVW9QT21RIiwiZXhwIjoxNTgzMzg4MDI1fQ.s4WBkVlWuCTwSiczZfk8VQiRpLaA8qOypMgcKmjFQdI
+          required: true
       responses:
+        401:
+          description: UnAuthorized, Invalid Authorization Token
+          schema:
+            $ref: '#/definitions/ErrUnAuthrized'
         403:
           description: Forbidden, Invalid Api Key
           schema:
@@ -710,7 +834,17 @@ paths:
             type: string
             example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
           required: true
+        - in: header
+          name: Authorization
+          schema:
+            type: string
+            example: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJOYW1lIjoiSGltYW5zaHUiLCJ1c2VyS2V5IjoieHlWWnhKbndhR0xqcWY5bHBjYkRJdWZJVW9QT21RIiwiZXhwIjoxNTgzMzg4MDI1fQ.s4WBkVlWuCTwSiczZfk8VQiRpLaA8qOypMgcKmjFQdI
+          required: true
       responses:
+        401:
+          description: UnAuthorized, Invalid Authorization Token
+          schema:
+            $ref: '#/definitions/ErrUnAuthrized'
         403:
           description: Forbidden, Invalid Api Key
           schema:
@@ -1556,4 +1690,20 @@ definitions:
           message:
             type: string
             example: Forbidden, Invalid Api Key
+        type: object
+
+  ErrUnAuthrized:
+    type: object
+    properties:
+      success:
+        type: boolean
+        example: false
+      error:
+        properties:
+          code:
+            type: number
+            example: 401
+          message:
+            type: string
+            example: UnAuthorized Request, Invalid Authorization Token
         type: object
