@@ -7,23 +7,23 @@ import (
 	"log"
 	"os"
 	"path"
-	"path/filepath"
-	"runtime"
-	"strings"
 )
 
 func GetEnvFile(env string) string {
-	filename := []string{"../../config/properties/app.config.json"}
-
-	_, dirname, _, _ := runtime.Caller(0)
-	filePath := path.Join(filepath.Dir(dirname), strings.Join(filename, ""))
+	dirname, err := os.Getwd()
+	if err != nil {
+		log.Fatal(err)
+	}
+	filePath := path.Join(path.Join(dirname, "/config/properties/app.config.json"))
 	return filePath
 }
 
 func GetEnvDBFile(env string) string {
-	filename := []string{"../../config/properties/db/env.", env, ".json"}
-	_, dirname, _, _ := runtime.Caller(0)
-	filePath := path.Join(filepath.Dir(dirname), strings.Join(filename, ""))
+	dirname, err := os.Getwd()
+	if err != nil {
+		log.Fatal(err)
+	}
+	filePath := path.Join(path.Join(dirname, "/config/properties/db/env."+env+".json"))
 	return filePath
 }
 
