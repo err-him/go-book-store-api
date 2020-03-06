@@ -22,6 +22,38 @@ Before running API server, you should set the database config with yours or set 
 }
 ```
 
+## Run via Docker
+
+### Requirements
+
+**Step 1:** Create the Docker image according to [Dockerfile](Dockerfile).
+Ensure docker-compose is installed on your build system.
+For details on how to do this, see: https://docs.docker.com/compose/install/
+
+```shell
+# This may take a few minutes.
+$ docker-compose up -d
+```
+This will create two containers in background for Go and Mysql respectively
+
+**Step 2:**.
+The above process will create two separate container and DB for application, to auto populate some data in DB run
+
+```shell
+
+$ cat db.sql | docker exec -i full_db_mysql /usr/bin/mysql -u root --password=root book_store
+
+```
+
+**Step 3:** Open another terminal and access the example API endpoint.
+
+```shell
+$ curl http://localhost:9002/health
+{"status": "up" }
+```
+**Important Note:** While setting up the docker change the DB host from ``127.0.0.1`` to ``book-store-mysql`` because while creating the docker Image we are proving host name ``book-store-mysql`` else use ``127.0.0.1`` if running using go run or make run
+
+
 ## Routing
 
 **gorilla/mux**  is being used to setup for routing. It provides some powerful feature like grouping/middleware/handler etc.

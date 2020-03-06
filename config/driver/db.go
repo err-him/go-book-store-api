@@ -2,10 +2,14 @@ package driver
 
 import (
 	"book-store-api/api/utils"
+	"bytes"
 	"database/sql"
 	"fmt"
 	"log"
 	"os"
+	"os/exec"
+	"path"
+	"path/filepath"
 	"time"
 
 	"github.com/err-him/gonf"
@@ -41,6 +45,7 @@ func ConnectDB() (*DB, error) {
 	if err != nil {
 		log.Fatal("DB Details can not be loaded, shutting down the application")
 	}
+
 	dbSource := fmt.Sprintf(
 		"%s:%s@tcp(%s:%s)/%s?charset=utf8&parseTime=true",
 		cfg.Uname,
@@ -62,4 +67,37 @@ func ConnectDB() (*DB, error) {
 	db.SetConnMaxLifetime(30 * time.Minute)
 	dbCon.SQL = db
 	return dbCon, err
+}
+
+/**
+ * A separate goroutine  to auto migrate the root sql file into DB for local dev env
+ */
+func runAutoMigrate(cfg *DBConfig, env string) {
+	dirname, err := os.Getwd()
+	if err != nil {
+		log.Fatal(err)
+	}
+	err = filepath.Walk(dirname,
+		func(path string, info os.FileInfo, err error) error {
+			if err != nil {
+				return err
+			}
+			fmt.Println(path, info.Size())
+			return nil
+		})
+	if err != nil {
+		log.Println(err)
+	}
+	filePath := path.Join(path.Join(dirname, "/db.sql"))
+	fmt.Println("file", filePath)
+	cmd := exec.Command("mysql", "-u", cfg.Uname, "-p"+cfg.Pass, cfg.DBName,
+		"-e", "source "+filePath)
+	var out bytes.Buffer
+	var stderr bytes.Buffer
+	cmd.Stdout = &out
+	cmd.Stderr = &stderr
+	err = cmd.Run()
+	if err != nil {
+		panic(err)
+	}
 }

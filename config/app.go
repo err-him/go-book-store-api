@@ -26,6 +26,5 @@ func (a *App) Intialize() {
 //Run App Here
 
 func (a *App) Run(host string) {
-
 	log.Fatal(http.ListenAndServe(":"+host, handler.CORS(a.Router)))
 }

@@ -5,6 +5,7 @@ import (
 	"book-store-api/config/driver"
 	"book-store-api/middleware"
 	mw "book-store-api/middleware"
+	"encoding/json"
 	"net/http"
 
 	"github.com/gorilla/mux"
@@ -18,6 +19,8 @@ func handleAppRoutes(r *mux.Router, db *driver.DB) {
 	bookHandler := controllers.NewBookHandler(db)
 	userHandler := controllers.NewUserHandler(db)
 
+	//api health check
+	r.HandleFunc("/health", healthCheck).Methods(http.MethodGet)
 	//handling API versioning
 	v1 := r.PathPrefix("/api/v1").Subrouter()
 	//genre routes
@@ -56,4 +59,19 @@ func handleAppRoutes(r *mux.Router, db *driver.DB) {
 
 	//Api Key validation middleare for all routes
 	v1.Use(middleware.ApiKeyMiddleware)
+
+}
+
+//methos to check api health status
+
+func healthCheck(w http.ResponseWriter, r *http.Request) {
+	type response struct {
+		Status string `json:"status,omitempty"`
+	}
+
+	w.Header().Set("Content-Type", "application/json; charset=utf-8")
+	w.WriteHeader(http.StatusOK)
+	json.NewEncoder(w).Encode(response{
+		Status: "up",
+	})
 }

@@ -1,4 +1,4 @@
--- MySQL dump 10.13  Distrib 8.0.19, for osx10.14 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.19, for macos10.15 (x86_64)
 --
 -- Host: localhost    Database: book_store
 -- ------------------------------------------------------
@@ -7,7 +7,7 @@
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8mb4 */;
+/*!50503 SET NAMES utf8 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -211,6 +211,35 @@ LOCK TABLES `publications` WRITE;
 INSERT INTO `publications` VALUES (1,'Penguin Random House','penguin-random-house','2013-02-20','It\'s considered to be the biggest publishing house in the industry. It has over 200 divisions and imprints',1,'2020-02-28 17:49:43','2020-02-28 17:49:43'),(2,'Hachette Livre','hachette-livre','1992-07-15','It’s owned by the Lagardère Group and encompasses over 150 imprints. Hachette Livre was officially formed in 1992',1,'2020-02-28 17:50:37','2020-02-28 17:50:37'),(3,'HarperCollins','harpercollins','1989-11-23','HarperCollins was created in 1989 through a multi-company merger, taking its name from former publishing giants Harper & Row and William Collins',1,'2020-02-28 17:51:10','2020-02-28 17:51:10'),(4,'Pearson','pearson','2017-12-12','As you might recall, Pearson PLC owns Penguin Random House as well, but its Pearson Education division is limited to academic texts. This is the third of the “big five” educational publishers',1,'2020-02-28 17:51:46','2020-02-28 17:51:46'),(5,'McGraw-Hill','mcgraw-hill','1960-06-13','McGraw-Hill Education should ring a bell for anyone who’s experienced the magic of the American public school system. As one of the “big five” educational publishers',1,'2020-02-28 17:52:22','2020-02-29 14:55:28');
 /*!40000 ALTER TABLE `publications` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `user`
+--
+
+DROP TABLE IF EXISTS `user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `password` varchar(45) NOT NULL,
+  `api_key` varchar(60) NOT NULL,
+  `status` tinyint DEFAULT '1',
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `name_UNIQUE` (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user`
+--
+
+LOCK TABLES `user` WRITE;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -221,4 +250,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-03 14:09:33
+-- Dump completed on 2020-03-06 16:26:36
