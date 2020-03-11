@@ -63,9 +63,13 @@ func (u *Users) VerifyUser(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	res, err := u.userRepo.Verify(r.Context(), &req)
+	if err != nil && err == models.ErrInvalidCredential {
+		handler.HttpError(w, http.StatusUnauthorized, err.Error(), err.Error())
+		return
+	}
 	if err != nil {
 		handler.HttpError(w, http.StatusInternalServerError, err.Error(), err.Error())
 		return
 	}
-	handler.HttpResponse(w, http.StatusCreated, res)
+	handler.HttpResponse(w, http.StatusOK, res)
 }
