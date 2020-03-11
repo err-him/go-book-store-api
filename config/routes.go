@@ -18,7 +18,6 @@ func handleAppRoutes(r *mux.Router, db *driver.DB) {
 	authorhandler := controllers.NewAuthorHandler(db)
 	bookHandler := controllers.NewBookHandler(db)
 	userHandler := controllers.NewUserHandler(db)
-
 	//api health check
 	r.HandleFunc("/health", healthCheck).Methods(http.MethodGet)
 	//handling API versioning

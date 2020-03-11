@@ -1,7 +1,6 @@
 # Go-book-store-api
 Go Sample project to understand Mysql CRUD operation with best practises
 
-
 A production ready sample Book store RESTful API with Go using **gorilla/mux** **uber/Zap** **lumberjack** with **Mysql** (A nice relational Database), JWT Authentication. This Project contains a golang implementation of Swagger 2.0 (aka OpenAPI 2.0): it knows how to serialize and deserialize swagger specifications.
 
 ## Installation & Run
@@ -175,6 +174,45 @@ paths:
         200:
           description: OK
 ```
+
+
+
+## Quick Start Swagger
+
+ This Project contains a golang implementation of Swagger 2.0 (aka OpenAPI 2.0): it knows how to serialize and deserialize swagger specifications.
+
+ `go-swagger` brings to the go community a complete suite of fully-featured, high-performance, API components to work with a Swagger API
+
+**Installation Go Swagger**
+To install Go SWAGGER in Mac, type following command
+
+```
+brew tap go-swagger/go-swagger
+brew install go-swagger
+```
+Once Installation complete go to project repo and generate swagger documentation by following command
+
+` swagger serve -F=swagger ./swagger.yml `
+
+Also created nice Makefile for the same, to run via make enter:
+`make serve-swagger`
+
+** Swagger UI**
+![Swagger UI](https://github.com/err-him/go-book-store-api/blob/develop/assets/swagger/Screenshot%202020-03-04%20at%2012.15.37%20PM.png)
+![Swagger UI](https://github.com/err-him/go-book-store-api/blob/develop/assets/swagger/Screenshot%202020-03-03%20at%206.42.14%20PM.png)
+![Swagger UI](https://github.com/err-him/go-book-store-api/blob/develop/assets/swagger/Screenshot%202020-03-03%20at%206.42.37%20PM.png)
+![Swagger UI](https://github.com/err-him/go-book-store-api/blob/develop/assets/swagger/Screenshot%202020-03-03%20at%206.42.45%20PM.png)
+![Swagger UI](https://github.com/err-him/go-book-store-api/blob/develop/assets/swagger/Screenshot%202020-03-03%20at%206.42.58%20PM.png)
+![Swagger UI](https://github.com/err-him/go-book-store-api/blob/develop/assets/swagger/Screenshot%202020-03-03%20at%206.42.58%20PM.png)
+![Swagger UI](https://github.com/err-him/go-book-store-api/blob/develop/assets/swagger/Screenshot%202020-03-03%20at%206.43.07%20PM.png)
+
+
+
+
+
+
+
+
 
 
 

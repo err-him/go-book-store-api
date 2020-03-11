@@ -28,10 +28,10 @@ swagger: "2.0"
 
 paths:
 
-  /author/create:
+  /author:
 
     post:
-      tags: [auhtor]
+      tags: [author]
       summary: create new Author
       operationId: AuthorCreate
       parameters:
@@ -76,10 +76,9 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
-  /author/update:
 
     put:
-      tags: [auhtor]
+      tags: [author]
       summary: Update Author
       operationId: AuthorUpdate
       parameters:
@@ -121,10 +120,46 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
-  /author/delete/{id}:
+
+  /author/{id}:
+
+    get:
+      tags: [author]
+      summary: Get Author Detail by Id or Slug
+      operationId: GetAuthor
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+          description: Numeric ID or String slug of author to get
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
+      responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
+        200:
+          description: fetched record successfully
+          schema:
+            $ref: '#/definitions/AuthorGetRes'
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
 
     delete:
-      tags: [auhtor]
+      tags: [author]
       summary: Delete Author
       operationId: AuthorDelete
       parameters:
@@ -166,47 +201,10 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
-  /author/get/{id}:
+  /author/all:
 
     get:
-      tags: [auhtor]
-      summary: Get Author Detail by Id or Slug
-      operationId: GetAuthor
-      parameters:
-        - in: path
-          name: id
-          schema:
-            type: string
-          required: true
-          description: Numeric ID or String slug of author to get
-        - in: header
-          name: ApiKey
-          schema:
-            type: string
-            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
-          required: true
-      responses:
-        403:
-          description: Forbidden, Invalid Api Key
-          schema:
-            $ref: '#/definitions/ErrForbidden'
-        200:
-          description: fetched record successfully
-          schema:
-            $ref: '#/definitions/AuthorGetRes'
-        400:
-          description: error while processing request
-          schema:
-            $ref : '#/definitions/BadRequest'
-        500:
-          description: error while processing request
-          schema:
-            $ref : '#/definitions/InternalErr'
-
-  /author/get/all:
-
-    get:
-      tags: [auhtor]
+      tags: [author]
       summary: Get All Author Details
       operationId: GetAllAuthor
       parameters:
@@ -235,7 +233,7 @@ paths:
             $ref : '#/definitions/InternalErr'
 
 #Genre Routes
-  /genre/create:
+  /genre:
 
     post:
       tags: [Genre]
@@ -282,8 +280,6 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
-  /genre/update:
-
     put:
       tags: [Genre]
       summary: Update Genre
@@ -327,7 +323,7 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
-  /genre/delete/{id}:
+  /genre/{id}:
 
     delete:
       tags: [Genre]
@@ -372,8 +368,6 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
-  /genre/get/{id}:
-
     get:
       tags: [Genre]
       summary: Get Genre Detail by Id or Slug
@@ -409,7 +403,8 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
-  /genre/get/all:
+
+  /genre/all:
 
     get:
       tags: [Genre]
@@ -441,7 +436,7 @@ paths:
             $ref : '#/definitions/InternalErr'
 
 #Publishers Routes
-  /publishers/create:
+  /publishers:
 
     post:
       tags: [Publishers]
@@ -488,8 +483,6 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
-  /publishers/update:
-
     put:
       tags: [Publishers]
       summary: Update Publishers
@@ -533,7 +526,8 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
-  /publishers/delete/{id}:
+
+  /publishers/{id}:
 
     delete:
       tags: [Publishers]
@@ -578,8 +572,6 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
-  /publishers/get/{id}:
-
     get:
       tags: [Publishers]
       summary: Get Publishers Detail by Id or Slug
@@ -615,7 +607,7 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
-  /publishers/get/all:
+  /publishers/all:
 
     get:
       tags: [Publishers]
@@ -647,7 +639,7 @@ paths:
             $ref : '#/definitions/InternalErr'
 
 #Book Routes
-  /book/create:
+  /book:
 
     post:
       tags: [Books]
@@ -694,8 +686,6 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
-  /book/update:
-
     put:
       tags: [Books]
       summary: Update Books
@@ -739,7 +729,7 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
-  /book/delete/{id}:
+  /book/{id}:
 
     delete:
       tags: [Books]
@@ -784,8 +774,6 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
-  /book/get/{id}:
-
     get:
       tags: [Books]
       summary: Get Book Detail by Id or Slug
@@ -821,7 +809,7 @@ paths:
           schema:
             $ref : '#/definitions/InternalErr'
 
-  /book/get/all:
+  /book/all:
 
     get:
       tags: [Books]
@@ -901,6 +889,82 @@ paths:
 
 
 
+#User Routes
+  /users:
+
+    post:
+      tags: [Users]
+      summary: create new User
+      operationId: CreateUser
+      parameters:
+        - in: body
+          name: User
+          description: User object that needs to be added to database
+          required: true
+          schema:
+            $ref: '#/definitions/CreateVerifyUserReq'
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
+      responses:
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
+        201:
+          description: successful created User
+          schema:
+            $ref: '#/definitions/CreateBooksRes'
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
+
+  /users/verify:
+
+    get:
+      tags: [Users]
+      summary: Verify Users
+      operationId: VerifyUsers
+      parameters:
+        - in: body
+          name: Users
+          description: User object that needs to be verified
+          required: true
+          schema:
+            $ref: '#/definitions/CreateVerifyUserReq'
+        - in: header
+          name: ApiKey
+          schema:
+            type: string
+            example: mjzf7ALWPMNnAgZjlvr5kdbjMA8zAu7stPCnnDqN
+          required: true
+      responses:
+        401:
+          description: Unauthorized, Invalid username or password
+          schema:
+            $ref: '#/definitions/ErrInvalidUserDetail'
+        403:
+          description: Forbidden, Invalid Api Key
+          schema:
+            $ref: '#/definitions/ErrForbidden'
+        200:
+          description: The user verified successfully
+        400:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/BadRequest'
+        500:
+          description: error while processing request
+          schema:
+            $ref : '#/definitions/InternalErr'
 
 
 #definitions of meta Data
@@ -1630,6 +1694,18 @@ definitions:
               type: string
               example: https://images-na.ssl-images-amazon.com/images/I/414ox%2BURkdL.jpg
 
+  CreateVerifyUserReq:
+    required:
+      - name
+      - password
+    properties:
+      name:
+        type: string
+        example: test
+      password:
+        type: string
+        example: test
+
 
 
 #Error Object Response
@@ -1706,4 +1782,20 @@ definitions:
           message:
             type: string
             example: UnAuthorized Request, Invalid Authorization Token
+        type: object
+
+  ErrInvalidUserDetail:
+    type: object
+    properties:
+      success:
+        type: boolean
+        example: false
+      error:
+        properties:
+          code:
+            type: number
+            example: 401
+          message:
+            type: string
+            example: Unauthorized, Invalid username or password
         type: object
