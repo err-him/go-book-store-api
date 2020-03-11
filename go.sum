@@ -1,6 +1,8 @@
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/dgrijalva/jwt-go v3.2.0+incompatible h1:7qlOGliEKZXTDg6OTjfoBKDXWrumCAMpl/TFQ4/5kLM=
+github.com/dgrijalva/jwt-go v3.2.0+incompatible/go.mod h1:E3ru+11k8xSBh+hMPgOLZmtrrCbhqsmaPHjLKYnJCaQ=
 github.com/err-him/gonf v0.0.0-20200228050058-c0acd37ad386 h1:bufgX22vaVuihLfdFvPp8wTXfhBHDaST3oorsGS8UAI=
 github.com/err-him/gonf v0.0.0-20200228050058-c0acd37ad386/go.mod h1:20zsdoDiEHI5swI/d1yOv8e5YvWVEll68d9owtvZcic=
 github.com/err-him/gozap v0.0.0-20200220171722-2adb514e683e h1:26GxKacVQvmSayN8RGD/ytuiivwcQQoB8NnSxRtJw3Q=

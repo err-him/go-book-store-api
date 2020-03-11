@@ -1,0 +1,48 @@
+version: "3.5"
+services:
+  app:
+    container_name: golang-book-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 9002:9002
+    restart: on-failure
+    environment:
+      APP_ENV: local
+    volumes:
+      - type: volume
+        source: api
+        target: /usr/src/app
+    depends_on:
+      - book-store-mysql
+    command: ["./wait-for", "book-store-mysql:3306", "--", "--", "./main"]
+    networks:
+      - book-store
+
+  book-store-mysql:
+    image: mysql:8.0.19
+    container_name: full_db_mysql
+    ports:
+      - 3306:3306
+    environment:
+       MYSQL_ROOT_PASSWORD: 'root'
+       MYSQL_DATABASE: 'book_store'
+       MYSQL_USER: 'root'
+       MYSQL_PASSWORD: 'root'
+       MYSQL_ROOT_HOST: 'book-store-mysql'
+    volumes:
+      - type: volume
+        source: database_mysql
+        target: /var/lib/mysql
+    networks:
+      - book-store
+
+volumes:
+  api:
+  database_mysql:
+
+# Networks to be created to facilitate communication between containers
+networks:
+  book-store:
+    driver: bridge

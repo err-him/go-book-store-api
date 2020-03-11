@@ -1,13 +1,12 @@
 package controllers
 
 import (
-	"book-store-api/config/driver"
 	hc "book-store-api/api/constants"
-	"book-store-api/api/handler"
 	"book-store-api/api/models"
 	r "book-store-api/api/repositories"
+	"book-store-api/config/driver"
+	"book-store-api/handler"
 	"encoding/json"
-	"fmt"
 	"net/http"
 	"strconv"
 
@@ -44,7 +43,6 @@ func (p *Publishers) CreatePublisher(w http.ResponseWriter, r *http.Request) {
 
 	res, err := p.pubRepo.Create(r.Context(), &req)
 	if err != nil {
-		fmt.Println("err", err.Error())
 		handler.HttpError(w, http.StatusInternalServerError, hc.INTERNAL_SERVER_ERROR, err.Error())
 		return
 	}
